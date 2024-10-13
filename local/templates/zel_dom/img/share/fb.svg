@@ -1,0 +1,12 @@
+<svg width="57.000000" height="57.000000" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<linearGradient id="paint_linear_1_1051_0" x1="33.930485" y1="17.644501" x2="25.787628" y2="36.643414" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#37AEE2"/>
+			<stop offset="1.000000" stop-color="#1E96C8"/>
+		</linearGradient>
+	</defs>
+	<g clip-path="url(#clip1_1049)">
+		<path id="Vector" d="M44.8164 28.4551C44.8164 37.4907 37.4902 44.8159 28.4551 44.8159C19.418 44.8159 12.0938 37.4907 12.0938 28.4551C12.0938 19.4189 19.418 12.0938 28.4551 12.0938C37.4902 12.0938 44.8164 19.4189 44.8164 28.4551Z" fill="#3B5998" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Vector" d="M32.5684 29.0952L29.6484 29.0952L29.6484 39.7905L25.2246 39.7905L25.2246 29.0952L23.1211 29.0952L23.1211 25.3364L25.2246 25.3364L25.2246 22.9043C25.2246 21.1646 26.0508 18.4409 29.6875 18.4409L32.9629 18.4546L32.9629 22.103L30.5859 22.103C30.1973 22.103 29.6484 22.2979 29.6484 23.1279L29.6484 25.3398L32.9531 25.3398L32.5684 29.0952Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

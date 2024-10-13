@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#fff">
+    <title>Интернет-магазин товаров для промышленного земледелия</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="nofollow,noindex">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <!--[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+    <link href="css/libs.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script>
+      var url_api = 'https://cases.9n.by/test/zemledel/api/';
+      //- var url_api = 'http://localhost/zemledel/site/build/api/';
+    </script>
+  </head>
+  <body class="page-home">
+    <div class="main">
+      <!--  TOP  -->
+      <section class="top" id="top">
+        <div class="container">
+          <!--  HEADER  -->
+          <header class="header display-flex">
+            <div class="header__logo" data-aos="fade-down"><a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="68" height="60"></a></div>
+            <div class="header__wrap">
+              <div class="header__row-1 display-flex align-center">
+                <div class="header__cat" data-aos="fade-down" data-aos-delay="50"><a class="cat-link" href="catalog.html"><i><svg width="23" height="23" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cat.svg#q"></use></svg></i><span>Каталог</span></a></div>
+                <div class="header__cart_mob" data-aos="fade-down" data-aos-delay="200"><a class="circle-btn a" href="cart.html" data-count="12"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cart.svg#q"></use></svg></a></div>
+                <div class="header__profile_mob" data-aos="fade-down" data-aos-delay="200"><a class="circle-btn" href="#modal-login" data-fancybox-modal-2 data-status="warn"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/user.svg#q"></use></svg></a></div>
+                <div class="header__zoom" data-aos="fade-down" data-aos-delay="150"><a class="circle-btn" href="search.html"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/zoom.svg#q"></use></svg></a></div>
+                <div class="header__burger" data-aos="fade-down" data-aos-delay="200">
+                  <button class="circle-btn js-aside-toggle" type="button"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/burger.svg#q"></use></svg></button>
+                </div>
+                <div class="header__search" data-aos="fade-down" data-aos-delay="150">
+                  <form class="search js-search" action="search.html" method="get">
+                    <button class="search__submit" type="submit"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/zoom.svg#q" aria-hidden="true"></use></svg></button>
+                    <input class="search__input js-search-input" type="text" name="search" placeholder="Поиск товаров по сайту" required>
+                    <div class="search__wrap js-search-result">
+                      <div class="search__bar">
+                        <div class="search__row">
+                          <div class="search__category">Категории</div>
+                          <div class="search__list">
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена томатов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена арбузов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена огурцов</a></div>
+                            <div class="search__item"><a href="goods.html">Обработка <strong>Сем</strong>ян</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена томатов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена арбузов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена огурцов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена огурцов</a></div>
+                          </div>
+                        </div>
+                        <div class="search__row">
+                          <div class="search__category">Товары</div>
+                          <div class="search__list">
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="header__favorite" data-aos="fade-down" data-aos-delay="200"><a class="circle-btn a" href="#modal-login" data-fancybox-modal-2 data-count="12"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/heart.svg#q"></use></svg></a></div>
+                <div class="header__weight" data-aos="fade-down" data-aos-delay="250"><a class="circle-btn" href="admin/comparison.html"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/weight.svg#q"></use></svg></a></div>
+                <div class="header__cart" data-aos="fade-down" data-aos-delay="300"><a class="cart-btn" href="cart.html"><i><svg width="23" height="21" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cart.svg#q"></use></svg></i><span>Корзина</span><small>8</small></a></div>
+                <div class="header__profile" data-aos="fade-down" data-aos-delay="350"><a class="profile-btn" href="#modal-login" data-fancybox-modal-2 data-status="warn"><i><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/user.svg#q"></use></svg></i><span>Мой профиль</span></a></div>
+              </div>
+              <div class="header__row-2 display-flex align-center">
+                <div class="header__phones" data-aos="fade-down" data-aos-delay="400">
+                  <div class="box-phones"><span class="box-phones__label js-tooltip-phones" tabindex="0" role="button" data-tooltip-content="#tooltip-phones"><i><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg/phone-1.svg#q"></use></svg></i><span>+7 (777) 208-99-55</span></span></div>
+                </div>
+                <div class="header__soc-1" data-aos="fade-down" data-aos-delay="450"><a class="social-link" href="https://t.me/+77772089955" target="_blank" data-title="Telegram"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/tg.svg#q"></use></svg></a></div>
+                <div class="header__soc-2" data-aos="fade-down" data-aos-delay="450"><a class="social-link" href="https://wa.me/77772089955" target="_blank" data-title="WhatsApp"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/wa.svg#q"></use></svg></a></div>
+                <div class="header__nav" data-aos="fade-down" data-aos-delay="500">
+                  <ul class="menu">
+                    <li class="menu__item"><a class="menu__link " href="about.html" data-slug="about">О компании</a></li>
+                    <li class="menu__item"><a class="menu__link " href="garanties.html" data-slug="garanties">Гарантия</a></li>
+                    <li class="menu__item"><a class="menu__link " href="buy.html" data-slug="buy">Как купить</a></li>
+                    <li class="menu__item"><a class="menu__link " href="delivery.html" data-slug="delivery">Доставка</a></li>
+                    <li class="menu__item"><a class="menu__link " href="payments.html" data-slug="payments">Оплата</a></li>
+                    <li class="menu__item"><a class="menu__link " href="partners.html" data-slug="partners">Партнеры</a></li>
+                    <li class="menu__item"><a class="menu__link " href="news.html" data-slug="news">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link " href="blog.html" data-slug="blog">Статьи</a></li>
+                    <li class="menu__item"><a class="menu__link " href="contacts.html" data-slug="contacts">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!--  HEADER  -->
+          <div class="top__wrap top__wrap-1">
+            <div class="top__label" data-aos="fade-left" data-aos-delay="300"><span>2500+</span>
+              <div>товаров для сада и огорода <br>с сертификатами качества</div>
+            </div>
+            <div class="top__desc top__desc-1">
+              <h1 class="top__title" data-aos="fade-right" data-aos-delay="300">Профессиональные семена оптом от&nbsp;ведущих производителей</h1>
+              <div class="top__btns" data-aos="fade-right" data-aos-delay="400"><a class="btn1 top__btn" href="catalog.html"><span>Перейти в каталог</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></a></div>
+            </div>
+            <div class="top__pic-1">
+              <picture>
+                <source media="(max-width: 1070px)" srcset="img/top/pic-1@mob.png"><img class="img-1" src="img/top/pic-1-1.png" width="1680" height="440" alt="">
+              </picture>
+              <div class="img-2"><img src="img/top/pic-1-2.png" width="1130" height="440" alt=""></div>
+            </div>
+            <div class="top__dots js-dots"></div>
+          </div>
+          <div class="slider top__slider" id="slider-top">
+            <div class="top__slider-wrap">
+              <div class="swiper js-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="top__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="450"> 
+                      <div class="top__slide-pic"><img src="img/top/cat-1.png" width="490" height="280" alt=""></div>
+                      <div class="top__slide-desc"><span class="top__slide-title">Удобрения <br>и стимуляторы</span>
+                        <p class="top__slide-txt">30+ лицензированных <br>поставщиков</p><span class="top__slide-link link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="top__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="550"> 
+                      <div class="top__slide-pic"><img src="img/top/cat-2.png" width="490" height="280" alt=""></div>
+                      <div class="top__slide-desc"><span class="top__slide-title">Средства защиты <br>растений</span>
+                        <p class="top__slide-txt">4 дня от заказа до <br>получения товара</p><span class="top__slide-link link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="top__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="600"> 
+                      <div class="top__slide-pic"><img src="img/top/cat-3.png" width="490" height="280" alt=""></div>
+                      <div class="top__slide-desc"><span class="top__slide-title">Рассадный <br>материал</span>
+                        <p class="top__slide-txt">Более 3000 вариантов <br>материала</p><span class="top__slide-link link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="top__slide" href="catalog-2.html"> 
+                      <div class="top__slide-pic"><img src="img/top/cat-4.png" width="490" height="280" alt=""></div>
+                      <div class="top__slide-desc"><span class="top__slide-title">Рулонный <br>материал</span>
+                        <p class="top__slide-txt">Более 3000 вариантов <br>материала</p><span class="top__slide-link link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="top__slide" href="catalog-2.html"> 
+                      <div class="top__slide-pic"><img src="img/top/cat-5.png" width="490" height="280" alt=""></div>
+                      <div class="top__slide-desc"><span class="top__slide-title">Капельный <br>полив</span>
+                        <p class="top__slide-txt">Более 3000 вариантов <br>материала</p><span class="top__slide-link link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="top__slide" href="catalog-2.html"> 
+                      <div class="top__slide-pic"><img src="img/top/cat-6.png" width="490" height="280" alt=""></div>
+                      <div class="top__slide-desc"><span class="top__slide-title">Различное <br>оборудование</span>
+                        <p class="top__slide-txt">Более 3000 вариантов <br>материала</p><span class="top__slide-link link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="top__slide" href="catalog-2.html"> 
+                      <div class="top__slide-pic"><img src="img/top/cat-7.png" width="490" height="280" alt=""></div>
+                      <div class="top__slide-desc"><span class="top__slide-title">Всё для сада <br>и газона</span>
+                        <p class="top__slide-txt">Более 3000 вариантов <br>материала</p><span class="top__slide-link link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__nav"><span class="slider__arrow slider__arrow_prev js-prev" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-prev.svg#q"></use></svg></span><span class="slider__arrow slider__arrow_next js-next" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-next.svg#q"></use></svg></span></div>
+          </div>
+        </div>
+      </section>
+      <!--  /TOP  -->
+      <!--  BENEFITS  -->
+      <section class="section section_benefits" id="s-benefits">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-right" data-aos-delay="0">Интернет-магазин «Земледел» — все&nbsp;для <strong>комфортного</strong> промышленного земледелия</h2>
+          <div class="benefits" id="benefits">
+            <ul class="benefits__nav">
+              <li data-aos="fade-right" data-aos-delay="200"><a class="benefits__tab js-tab active" href="#tab-benefits-1"><i><svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/benefits/1.svg#q"></use></svg></i><span>2500 + товаров для&nbsp;выращивания растений&nbsp;на&nbsp;участке</span></a></li>
+              <li data-aos="fade-right" data-aos-delay="250"><a class="benefits__tab js-tab" href="#tab-benefits-2"><i><svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/benefits/2.svg#q"></use></svg></i><span>доставка по всему&nbsp;Казахстану</span></a></li>
+              <li data-aos="fade-right" data-aos-delay="300"><a class="benefits__tab js-tab" href="#tab-benefits-3"><i><svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/benefits/3.svg#q"></use></svg></i><span>сервис по комплектации и&nbsp;доставке&nbsp;заказов</span></a></li>
+              <li data-aos="fade-right" data-aos-delay="350"><a class="benefits__tab js-tab" href="#tab-benefits-4"><i><svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/benefits/4.svg#q"></use></svg></i><span>сопровождение от высадки семян&nbsp;до&nbsp;сбора&nbsp;урожая</span></a></li>
+            </ul>
+            <div class="benefits__slider">
+              <div class="swiper js-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="benefits__slide">
+                      <div class="benefits__pic" data-aos="fade" data-aos-delay="100"><img src="img/benefits/pic-1.jpg" width="629" height="447" alt=""></div>
+                      <div class="benefits__desc" data-aos="fade-left" data-aos-delay="450">
+                        <div class="benefits__head"><i class="benefits__icon"><svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/benefits/1.svg#q"></use></svg></i><span class="benefits__title">2500 + товаров в наличии для выращивания растений на участке</span></div>
+                        <div class="benefits__txt">Мы сотрудничаем только с проверенными производителями семян. На весь семенной материал действует гарантия всхожести 96% и на сорт, заявленный в характеристиках по каждому сорту.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="benefits__slide">
+                      <div class="benefits__pic"><img src="img/benefits/pic-1.jpg" width="629" height="447" alt=""></div>
+                      <div class="benefits__desc">
+                        <div class="benefits__head"><i class="benefits__icon"><svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/benefits/2.svg#q"></use></svg></i><span class="benefits__title">Доставка по всему&nbsp;Казахстану</span></div>
+                        <div class="benefits__txt">Доставляем товар от 1 до 10 дней по всему Казахстану и курьерами по г. Алматы.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="benefits__slide">
+                      <div class="benefits__pic"><img src="img/benefits/pic-1.jpg" width="629" height="447" alt=""></div>
+                      <div class="benefits__desc">
+                        <div class="benefits__head"><i class="benefits__icon"><svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/benefits/3.svg#q"></use></svg></i><span class="benefits__title">Сервис по комплектации и&nbsp;доставке заказов</span></div>
+                        <div class="benefits__txt">Комплектуем товар в фирменной упаковке от завода производителя от 1 до 3 дней, проверяем на брак и целостность упаковки, предоставляем фотоотчёт перед отправкой и мониторим каждый заказ.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="benefits__slide">
+                      <div class="benefits__pic"><img src="img/benefits/pic-1.jpg" width="629" height="447" alt=""></div>
+                      <div class="benefits__desc">
+                        <div class="benefits__head"><i class="benefits__icon"><svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/benefits/4.svg#q"></use></svg></i><span class="benefits__title">Сопровождение и&nbsp;консультации</span></div>
+                        <div class="benefits__txt">На нашем сайте вы найдёте все, что нужно от семян до получения урожая. Наши компетентные менеджеры проконсультируют вас по любой культуре и помогут улучшить технологию её выращивания.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  /BENEFITS  -->
+      <!--  CAT  -->
+      <section class="section section_cat" id="s-cat">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-right" data-aos-delay="0"><strong>Каталог товаров</strong> для фермерского хозяйства</h2>
+          <div class="section__aside" data-aos="fade-left" data-aos-delay="100"><i><img src="img/cat/aside.svg" width="80" height="80" alt=""></i>
+            <p>всего 10 категорий <br>и более 2500 + товаров</p>
+          </div>
+          <div class="cat" id="cat">
+            <div class="cat__slider">
+              <div class="swiper js-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="cat__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="0">
+                      <div class="cat__pic"><img src="img/catalog/pic-1.png" width="324" height="257" alt=""></div>
+                      <div class="cat__desc"><span class="cat__title">Семена овощей</span>
+                        <div class="cat__footer"><span class="cat__count">794 товара</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="cat__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="50">
+                      <div class="cat__pic"><img src="img/catalog/pic-2.png" width="324" height="257" alt=""></div>
+                      <div class="cat__desc"><span class="cat__title">Семена <br>кормовых</span>
+                        <div class="cat__footer"><span class="cat__count">794 товара</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="cat__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="100">
+                      <div class="cat__pic"><img src="img/catalog/pic-3.png" width="324" height="257" alt=""></div>
+                      <div class="cat__desc"><span class="cat__title">Удобрения, стимуляторы</span>
+                        <div class="cat__footer"><span class="cat__count">794 товара</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="cat__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="150">
+                      <div class="cat__pic"><img src="img/catalog/pic-4.png" width="324" height="257" alt=""></div>
+                      <div class="cat__desc"><span class="cat__title">Средства защиты растений</span>
+                        <div class="cat__footer"><span class="cat__count">794 товара</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="cat__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="0">
+                      <div class="cat__pic"><img src="img/catalog/pic-5.png" width="324" height="257" alt=""></div>
+                      <div class="cat__desc"><span class="cat__title">Капельный полив</span>
+                        <div class="cat__footer"><span class="cat__count">794 товара</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="cat__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="50">
+                      <div class="cat__pic"><img src="img/catalog/pic-6.png" width="324" height="257" alt=""></div>
+                      <div class="cat__desc"><span class="cat__title">Различное оборудование</span>
+                        <div class="cat__footer"><span class="cat__count">794 товара</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="cat__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="100">
+                      <div class="cat__pic"><img src="img/catalog/pic-7.png" width="324" height="257" alt=""></div>
+                      <div class="cat__desc"><span class="cat__title">Рулонный <br>материал</span>
+                        <div class="cat__footer"><span class="cat__count">794 товара</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div>
+                      </div></a></div>
+                  <div class="swiper-slide"><a class="cat__slide" href="catalog-2.html" data-aos="fade-up" data-aos-delay="150">
+                      <div class="cat__pic"><img src="img/catalog/pic-8.png" width="324" height="257" alt=""></div>
+                      <div class="cat__desc"><span class="cat__title">Всё для сада и газона</span>
+                        <div class="cat__footer"><span class="cat__count">794 товара</span>
+                          <span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span>
+                        </div>
+                      </div></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__nav js-nav"><span class="slider__arrow slider__arrow_prev js-prev" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-prev.svg#q"></use></svg></span><span class="slider__arrow slider__arrow_next js-next" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-next.svg#q"></use></svg></span></div>
+            </div>
+            <div class="cat__btns" data-aos="fade-up" data-aos-delay="200">
+              <a class="btn1 top__btn" href="catalog.html">
+              <span>Смотреть весь каталог</span>
+              <i class="btn1__arr">
+                <svg xmlns="http://www.w3.org/2000/svg" id="q" viewBox="0 0 40 26"><path d="M2 11.0533H33.72L26.46 3.0229C26.2919 2.83666 26.1653 2.62175 26.0874 2.39045C26.0095 2.15915 25.9818 1.91598 26.006 1.67483C26.0547 1.1878 26.3116 0.738555 26.72 0.425926C27.1284 0.113297 27.655 -0.0371095 28.1838 0.00779372C28.7127 0.052697 29.2005 0.289232 29.54 0.665363L39.54 11.7163C39.6073 11.8042 39.6674 11.8966 39.72 11.9926C39.72 12.0847 39.82 12.1399 39.86 12.232C39.9507 12.4432 39.9981 12.668 40 12.8951C39.9981 13.1222 39.9507 13.347 39.86 13.5581C39.86 13.6502 39.76 13.7055 39.72 13.7976C39.6674 13.8936 39.6073 13.986 39.54 14.0739L29.54 25.1248C29.352 25.3327 29.1165 25.4999 28.8503 25.6145C28.5841 25.7291 28.2938 25.7883 28 25.7879C27.5327 25.7887 27.0798 25.6388 26.72 25.3643C26.5175 25.2096 26.3501 25.0197 26.2274 24.8055C26.1047 24.5912 26.0291 24.3567 26.0049 24.1154C25.9808 23.8742 26.0085 23.631 26.0866 23.3996C26.1647 23.1683 26.2916 22.9534 26.46 22.7673L33.72 14.7369H2C1.46957 14.7369 0.96086 14.5429 0.585787 14.1975C0.210714 13.8521 0 13.3836 0 12.8951C0 12.4066 0.210714 11.9381 0.585787 11.5927C0.96086 11.2473 1.46957 11.0533 2 11.0533Z" fill="white"/><path d="M39.86 13.5572C39.86 13.6493 39.76 13.7045 39.72 13.7966C39.6674 13.8927 39.6073 13.985 39.54 14.0729L29.54 25.1249C29.352 25.3328 29.1165 25.5 28.8503 25.6146C28.5841 25.7292 28.2938 25.7884 28 25.788C27.5327 25.7888 27.0798 25.6389 26.72 25.3643C26.5175 25.2097 26.3501 25.0198 26.2274 24.8055C26.1047 24.5912 26.0291 24.3567 26.0049 24.1154C25.9808 23.8741 26.0085 23.6309 26.0866 23.3995C26.1647 23.1681 26.2916 22.9532 26.46 22.7671L33.72 14.736H2C1.46957 14.736 0.96086 14.542 0.585787 14.1965C0.210714 13.8511 0 13.3826 0 12.894H40C39.9981 13.1211 39.9507 13.346 39.86 13.5572Z"/></svg>
+            </i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  /CAT  -->
+      <section class="call call-1" id="call-1">
+        <div class="container">
+          <div class="call__desc">
+            <div class="call__head-title">
+              <h2 class="call__title" data-aos="fade-right" data-aos-delay="0">Мы на связи сейчас:</h2>
+              <div class="call__socials">
+                <ul class="socials">
+                  <li data-aos="fade" data-aos-delay="0"><a class="socials__link" href="tel:+77022080333" target="_blank" rel="noopener noreferrer" data-type="phone"><svg width="57" height="57" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/phone-2.svg#q"></use></svg></a></li>
+                  <li data-aos="fade" data-aos-delay="100"><a class="socials__link" href="https://wa.me/77772089955" target="_blank" rel="noopener noreferrer" data-type="whatsapp"><img src="img/svg/whatsapp-2.svg" width="57" height="57" alt="WhatsApp"></a></li>
+                  <li data-aos="fade" data-aos-delay="200"><a class="socials__link" href="https://t.me/+77772089955" target="_blank" rel="noopener noreferrer" data-type="telegram"><img src="img/svg/telegram-2.svg" width="57" height="57" alt="Telegram"></a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="call__list">
+              <li data-aos="fade-right" data-aos-delay="0"><i><img src="img/call/icon-1-1.svg" width="48" height="48" alt=""></i>
+                <div>консультации с нашим менеджером по телефону</div>
+              </li>
+              <li data-aos="fade-right" data-aos-delay="100"><i><img src="img/call/icon-1-2.svg" width="48" height="48" alt=""></i>
+                <div>оформление и сопровождение заказов</div>
+              </li>
+              <li data-aos="fade-right" data-aos-delay="200"><i><img src="img/call/icon-1-3.svg" width="48" height="48" alt=""></i>
+                <div>профессиональный расчет нормы расхода любого товара</div>
+              </li>
+            </ul>
+          </div>
+          <div class="call__pic-1" data-aos="fade-up" data-aos-delay="0"><img class="lazy" data-src="img/call/pic-1-1.png" width="610" height="546" alt="">
+            <div class="call__pic-1-1" data-aos="fade-up" data-aos-delay="50"><img class="lazy" data-src="img/call/pic-1-2.png" width="360" height="96" alt=""></div>
+            <div class="call__pic-1-2" data-aos="fade-up" data-aos-delay="100"><img class="lazy" data-src="img/call/pic-1-3.png" width="231" height="71" alt=""></div>
+          </div>
+        </div>
+      </section>
+      <!--  ASORT  -->
+      <section class="section section_asort" id="s-asort">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-right" data-aos-delay="0"><strong>Более 10 лет доставляем</strong> сертифицированные товары для промышленного земледелия по&nbsp;всему Казахстану</h2>
+          <div class="asort" id="asort">
+            <div class="asort__pics">
+              <div class="asort__pic" data-aos="fade-left" data-aos-delay="0"><img class="lazy" data-src="img/asort/pic-1.jpg" width="777" height="568" alt=""></div>
+              <div class="asort__pic-label" data-aos="fade-left" data-aos-delay="0"><i><img src="img/asort/like.svg" width="83" height="83" alt="Like"></i>
+                <p>Наша задача – подобрать подходящий товар и&nbsp;взять на себя всю логистику вашего заказа</p>
+              </div>
+            </div>
+            <div class="asort__desc">
+              <div class="txt asort__txt">
+                <p>В интернет-магазине товаров для сада, дачи и огорода «Земледел» вы найдете все товары, нужные для профессионального земледелия:</p>
+              </div>
+              <ul class="asort__list">
+                <li data-aos="fade-right" data-aos-delay="0"><i><img src="img/asort/icon-1.svg" width="48" height="48" alt=""></i>
+                  <p>семена овощей, <br>кормовых</p>
+                </li>
+                <li data-aos="fade-right" data-aos-delay="50"><i><img src="img/asort/icon-2.svg" width="48" height="48" alt=""></i>
+                  <p>все для капельного полива</p>
+                </li>
+                <li data-aos="fade-right" data-aos-delay="0"><i><img src="img/asort/icon-3.svg" width="48" height="48" alt=""></i>
+                  <p>удобрения, микроэлементы и&nbsp;стимуляторы</p>
+                </li>
+                <li data-aos="fade-right" data-aos-delay="50"><i><img src="img/asort/icon-4.svg" width="48" height="48" alt=""></i>
+                  <p>пестициды</p>
+                </li>
+                <li data-aos="fade-right" data-aos-delay="0"><i><img src="img/asort/icon-5.svg" width="48" height="48" alt=""></i>
+                  <p>рассадный и укрывной материал, пленка для теплиц</p>
+                </li>
+                <li data-aos="fade-right" data-aos-delay="50"><i><img src="img/asort/icon-6.svg" width="48" height="48" alt=""></i>
+                  <p>оборудование</p>
+                </li>
+              </ul>
+              <div class="asort__collapse js-collapse">
+                <div class="txt asort__collapse-wrap js-collapse-wrap">
+                  <div>
+                    <p>За 12 лет работы, мы стали надежным партнером для крупных тепличных комбинатов, бахчеводов, полеводов и крупных огородников.</p>
+                  </div>
+                </div><span class="link js-collapse-link" tabindex="0" role="button">Читать больше...</span>
+              </div>
+              <div class="asort__btns" data-aos="fade-right" data-aos-delay="0">
+                <a class="btn1 asort__btn" href="about.html"><span>О&nbsp;компании «Земледел»</span><i class="btn1__arr">
+                  <svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  /ASORT  -->
+      <!--  PARTNERS  -->
+      <section class="section section_partners" id="s-partners">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-right" data-aos-delay="0"><strong>Наши партнеры</strong> – мировые специалисты в&nbsp;сфере агропромышленности</h2>
+          <div class="partners" id="partners">
+            <div class="partners__slider">
+              <div class="swiper js-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="0">
+                      <div class="partners__logo"><img src="img/partners/1.png" width="" height="" alt=""></div><span class="partners__label">Jara</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="50">
+                      <div class="partners__logo"><img src="img/partners/2.png" width="" height="" alt=""></div><span class="partners__label">Bayer</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="100">
+                      <div class="partners__logo"><img src="img/partners/3.png" width="" height="" alt=""></div><span class="partners__label">Bejo</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="150">
+                      <div class="partners__logo"><img src="img/partners/4.png" width="" height="" alt=""></div><span class="partners__label">Valagro</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="200">
+                      <div class="partners__logo"><img src="img/partners/5.png" width="" height="" alt=""></div><span class="partners__label">Syngenta</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="250">
+                      <div class="partners__logo"><img src="img/partners/6.png" width="" height="" alt=""></div><span class="partners__label">Dupont</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="300">
+                      <div class="partners__logo"><img src="img/partners/7.png" width="" height="" alt=""></div><span class="partners__label">Basf</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="350">
+                      <div class="partners__logo"><img src="img/partners/8.png" width="" height="" alt=""></div><span class="partners__label">Seminis</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="400">
+                      <div class="partners__logo"><img src="img/partners/9.png" width="" height="" alt=""></div><span class="partners__label">Unigen Seeds</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="450">
+                      <div class="partners__logo"><img src="img/partners/10.png" width="" height="" alt=""></div><span class="partners__label">Rijk Zwaan</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="500">
+                      <div class="partners__logo"><img src="img/partners/11.png" width="" height="" alt=""></div><span class="partners__label">Avgust</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="550">
+                      <div class="partners__logo"><img src="img/partners/12.png" width="" height="" alt=""></div><span class="partners__label">Enza Zaden</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="600">
+                      <div class="partners__logo"><img src="img/partners/13.png" width="" height="" alt=""></div><span class="partners__label">Гавриш</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="650">
+                      <div class="partners__logo"><img src="img/partners/14.png" width="" height="" alt=""></div><span class="partners__label">ATI</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="700">
+                      <div class="partners__logo"><img src="img/partners/15.png" width="" height="" alt=""></div><span class="partners__label">Vellsam</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="partners__slide" data-aos="fade-up" data-aos-delay="750">
+                      <div class="partners__logo"><img src="img/partners/16.png" width="" height="" alt=""></div><span class="partners__label">Clause</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="partners__bottom">
+              <div class="partners__control">
+                <div class="partners__scrollbar">
+                  <div class="swiper-scrollbar js-scrollbar"></div>
+                </div>
+                <div class="slider__nav partners__nav">
+                  <span class="slider__arrow slider__arrow_prev js-prev" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-prev.svg#q"></use></svg></span><span class="slider__arrow slider__arrow_next js-next" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-next.svg#q"></use></svg></span>
+                </div>
+              </div>
+              <div class="partners__btns" data-aos="fade-left" data-aos-delay="200"><a class="btn2 partners__btn" href="#modal-diploms" data-fancybox-modal><span>Смотреть благодарственные письма</span></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  /PARTNERS  -->
+      <!--  PRINCIPLE  -->
+      <section class="section section_princ" id="s-princ">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-right" data-aos-delay="0">Для нас качество — <strong>это&nbsp;принцип</strong></h2>
+          <div class="princ" id="princ">
+            <div class="princ__pics">
+              <div class="princ__diplom-1" data-aos="fade" data-aos-delay="0"><img class="lazy" data-src="img/princ/diplom-2.png" width="444" height="520" alt=""></div>
+              <div class="princ__diplom-2" data-aos="fade" data-aos-delay="100"><img class="lazy" data-src="img/princ/diplom-1.png" width="444" height="520" alt=""></div>
+              <div class="princ__label" data-aos="fade-left" data-aos-delay="0"><i><img src="img/princ/reward.svg" width="74" height="74" alt="Reward"></i>
+                <p><strong>Сертификат качества</strong><small> пример документа</small></p>
+              </div>
+            </div>
+            <div class="princ__desc"><span class="princ__title" data-aos="fade-right" data-aos-delay="200">По запросу предоставляем сертификат качества от производителя к каждому товару</span>
+              <div class="princ__txt" data-aos="fade-right" data-aos-delay="250">
+                <p>Наши партнеры – специалисты в мире агропромышленности и лидеры по возделыванию всех видов культур. Мы работаем только с лицензированными компаниями и гарантируем, что вся продукция сертифицирована по мировым стандартам качества.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  /PRINCIPLE  -->
+      <section class="call call-2" id="call-2">
+        <div class="container">
+          <div class="call__wrap">
+            <div class="call__desc-2">
+              <h2 class="call__title-2" data-aos="fade-right" data-aos-delay="0"><strong>Бесплатно рассчитаем</strong> расход необходимого материала на&nbsp;вашу&nbsp;площадь</h2>
+              <div class="call__info" data-aos="fade-right" data-aos-delay="100"><i><img src="img/call/icon-2-1.svg" width="41" height="41" alt=""></i>
+                <p>выберите, что нужно рассчитать, оставьте свои контакты — мы отправим вам расчет</p>
+              </div>
+              <form class="form call__form" action="thanks.html" method="post">
+                <div class="form__box-select form__box-select_target" data-aos="fade-right" data-aos-delay="0">
+                  <select class="form__select js-select-icon" name="target">
+                    <option selected disabled>Расход семян на вашу площадь</option>
+                    <option>Расход семян на вашу площадь, схема посадки</option>
+                    <option>Расчет материала по капельному орошению</option>
+                    <option>Расход удобрений на вашу площадь</option>
+                    <option>Расход препарата на вредный объект</option>
+                  </select>
+                </div>
+                <div class="form__row-1" data-aos="fade-right" data-aos-delay="0">
+                  <div class="form__col-1-1">
+                    <div class="messengers js-messengers"><span class="messengers__label">Куда прислать расчет?</span>
+                      <input class="js-messengers-inp" type="hidden" name="messenger" value="WhatsApp">
+                      <div class="messengers__wrap"><a class="messengers__item js-messengers-btn active" tabindex="0" role="button" title="WhatsApp"><img src="img/svg/mess-wa.svg" width="64" height="64" alt="WhatsApp"></a><a class="messengers__item js-messengers-btn" tabindex="0" role="button" title="Telegram"><img src="img/svg/mess-tg.svg" width="64" height="64" alt="Telegram"></a><a class="messengers__item js-messengers-btn" tabindex="0" role="button" title="Email"><img src="img/svg/mess-email.svg" width="64" height="64" alt="Email"></a></div>
+                    </div>
+                  </div>
+                  <div class="form__col-1-2">
+                    <div class="form__box-input">
+                      <input class="form__input js-input-phone" type="tel" name="userphone" placeholder="Введите ваш номер телефона" required>
+                      <input class="form__input js-input-email" type="email" name="userphone" placeholder="Введите ваш E-mail" disabled style="display:none">
+                    </div>
+                  </div>
+                </div>
+                <div class="form__box-submit-1" data-aos="fade-right" data-aos-delay="0">
+                  <button class="btn1 form__submit" type="submit"><span>Получить расчет расхода</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="call__pic-2" data-aos="fade-up" data-aos-delay="0"><img class="lazy" data-src="img/call/pic-2-1.png" width="860" height="991" alt="">
+              <div class="call__box-2-1" data-aos="fade-up" data-aos-delay="100"><i><img src="img/call/icon-2-2.svg" width="78" height="78" alt=""></i>
+                <p>Спланируйте <br>посадочный сезон <br>вместе с «Земледелом» </p>
+              </div>
+              <div class="call__box-2-2"><i><img src="img/call/icon-2-3.svg" width="76" height="76" alt=""></i>
+                <p>предоставим скидку в зависимости от объема заказа или бесплатную доставку<span class="js-tooltip" tabindex="0" role="button" title="Условия уточняйте у наших менеджеров.">*</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  ARTICLES  -->
+      <section class="section section_articles" id="s-articles">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-right" data-aos-delay="0">Делимся <strong>полезными статьями</strong> по&nbsp;промышленному земледелию</h2>
+          <div class="articles" id="articles">
+            <div class="articles__slider">
+              <div class="swiper js-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="articles__slide" href="article.html" data-aos="fade-up" data-aos-delay="0">
+                      <div class="articles__pic"><img class="lazy" data-src="img/articles/pic-1.jpg" width="460" height="282" alt=""></div><span class="articles__title">Выращивание зелени как прибыльный бизнес</span>
+                      <div class="articles__excerpt">Практика показывает, что организовать бизнес на выращивании свежей зелени доступно в условиях даже небольшого условиях </div>
+                      <div class="articles__bottom"><span class="articles__publish">3 апреля 2023</span>
+                        <span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div></a></div>
+                  <div class="swiper-slide"><a class="articles__slide" href="article.html" data-aos="fade-up" data-aos-delay="50">
+                      <div class="articles__pic"><img class="lazy" data-src="img/articles/pic-2.jpg" width="460" height="282" alt=""></div><span class="articles__title">Дыня: посадка, выращивание и уход</span>
+                      <div class="articles__excerpt">В этой статье речь пойдет о сладком ароматном представителе многочисленного семейства тыквенных — дыне. </div>
+                      <div class="articles__bottom"><span class="articles__publish">30 марта 2023</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div></a></div>
+                  <div class="swiper-slide"><a class="articles__slide" href="article.html" data-aos="fade-up" data-aos-delay="100">
+                      <div class="articles__pic"><img class="lazy" data-src="img/articles/pic-3.jpg" width="460" height="282" alt=""></div><span class="articles__title">Какие овощи сеют на рассаду в марте рассаду в марте</span>
+                      <div class="articles__excerpt">С приходом весны начинается рассадный бум – столько всего нужно посеять! А перед этим необходимо докупить...</div>
+                      <div class="articles__bottom"><span class="articles__publish">2 марта 2023</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div></a></div>
+                </div>
+              </div>
+              <div class="slider__nav js-nav"><span class="slider__arrow slider__arrow_prev js-prev" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-prev.svg#q"></use></svg></span><span class="slider__arrow slider__arrow_next js-next" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-next.svg#q"></use></svg></span></div>
+            </div>
+            <div class="articles__btns" data-aos="fade-up" data-aos-delay="0"><a class="btn1 top__btn" href="catalog.html"><span>Читать все статьи</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></a></div>
+          </div>
+        </div>
+      </section>
+      <!--  /ARTICLES  -->
+      <!--  INFO  -->
+      <section class="section section_info" id="s-info">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-right" data-aos-delay="0"><strong>Узнайте больше</strong> об <br>интернет-магазине «Земледел»</h2>
+          <div class="info" id="info">
+            <div class="info__slider">
+              <div class="swiper js-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="info__slide" href="garanties.html" data-aos="fade-up" data-aos-delay="0">
+                      <div class="info__pic"><img class="lazy" data-src="img/info/1.svg" width="64" height="64" alt=""></div><span class="info__title">Гарантия</span>
+                      <div class="info__bottom"><span class="info__txt">сертифицированные товары, доставка в срок по договору, безопасная оплата покупок</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div></a></div>
+                  <div class="swiper-slide"><a class="info__slide" href="buy.html" data-aos="fade-up" data-aos-delay="50">
+                      <div class="info__pic"><img class="lazy" data-src="img/info/2.svg" width="64" height="64" alt=""></div><span class="info__title">Как купить</span>
+                      <div class="info__bottom"><span class="info__txt">пошаговая инструкция, как оформить заказ в интернет-магазине «Земледел»</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div></a></div>
+                  <div class="swiper-slide"><a class="info__slide" href="delivery.html" data-aos="fade-up" data-aos-delay="100">
+                      <div class="info__pic"><img class="lazy" data-src="img/info/3.svg" width="64" height="64" alt=""></div><span class="info__title">Доставка</span>
+                      <div class="info__bottom"><span class="info__txt">получите расчет сроков и стоимости доставки в любой город Казахстана</span><span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div></a></div>
+                  <div class="swiper-slide"><a class="info__slide" href="payments.html" data-aos="fade-up" data-aos-delay="150">
+                      <div class="info__pic"><img class="lazy" data-src="img/info/4.svg" width="64" height="64" alt=""></div><span class="info__title">Оплата</span>
+                      <div class="info__bottom"><span class="info__txt">5 способов оплаты заказа в&nbsp;интернет-магазине «Земледел»</span>
+                        <span class="link-diag"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-link.svg#q"></use></svg></span></div></a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__nav js-nav"><span class="slider__arrow slider__arrow_prev js-prev" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-prev.svg#q"></use></svg></span><span class="slider__arrow slider__arrow_next js-next" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-next.svg#q"></use></svg></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  /INFO  -->
+      <section class="call call-3" id="call-3">
+        <div class="container">
+          <div class="call__wrap">
+            <div class="call__desc-3">
+              <h2 class="call__title-2" data-aos="fade-right" data-aos-delay="0">Получите <strong>профессиональную консультацию</strong> нашего менеджера</h2><span class="call__title-3" data-aos="fade-right" data-aos-delay="0">Мы подробно расскажем вам:</span>
+              <ul class="call__list call__list_v2">
+                <li data-aos="fade-right" data-aos-delay="0"><i><img src="img/call/icon-3-1.svg" width="48" height="48" alt=""></i>
+                  <div>как улучшить технологию выращивания культур и&nbsp;повысить урожайность в поле или теплице</div>
+                </li>
+                <li data-aos="fade-right" data-aos-delay="0"><i><img src="img/call/icon-3-2.svg" width="48" height="48" alt=""></i>
+                  <div>поможем подобрать товары <span class="d-ib">для промышленного земледелия</span></div>
+                </li>
+                <li data-aos="fade-right" data-aos-delay="0"><i><img src="img/call/icon-3-3.svg" width="48" height="48" alt=""></i>
+                  <div>рассчитаем для вас норму расхода&nbsp;любого&nbsp;товара</div>
+                </li>
+              </ul>
+              <div class="call__row-btns">
+                <div class="call__btns" data-aos="fade-right" data-aos-delay="0"><a class="btn1 call__btn" href="#modal-consult" data-fancybox-modal><span>Получить консультацию</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></a></div>
+                <div class="call__socials">
+                  <ul class="socials">
+                    <li data-aos="fade" data-aos-delay="100"><a class="socials__link" href="https://wa.me/77772089955" target="_blank" rel="noopener noreferrer"><img src="img/svg/whatsapp-2.svg" width="57" height="57" alt="WhatsApp"></a></li>
+                    <li data-aos="fade" data-aos-delay="200"><a class="socials__link" href="https://t.me/+77772089955" target="_blank" rel="noopener noreferrer"><img src="img/svg/telegram-2.svg" width="57" height="57" alt="Telegram"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="call__pic-3" data-aos="fade-up" data-aos-delay="0"><img class="lazy" data-src="img/call/pic-3-1.png" width="798" height="939" alt="">
+              <div class="call__box-3-1"><i><img src="img/svg/call.svg" width="86" height="86" alt=""></i>
+                <p><strong class="color_green">Закутний Владислав</strong><small>менеджер интернет-магазина «Земледел»</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  FOOTER  -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__col footer__col-1-1">
+              <div class="footer__logo" data-aos="fade-right" data-aos-delay="0" data-aos-offset="0"><img src="img/logo-2.svg" width="202" height="202" alt=""></div>
+              <div class="footer__contacts" data-aos="fade-right" data-aos-delay="50" data-aos-offset="0">
+                <div class="footer__phones">
+                  <div class="footer__phones-1">
+                    <div class="box-phones"><span class="box-phones__label js-tooltip-phones_aside" tabindex="0" role="button" data-tooltip-content="#tooltip-phones-aside"><i><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg/phone-1.svg#q"></use></svg></i><span>+7 (777) 208-99-55</span></span></div><span class="footer__label">наш телефон</span>
+                  </div>
+                  <div class="footer__socials" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0">
+                    <ul class="socials">
+                      <li><a class="socials__link" href="https://wa.me/77772089955" target="_blank" rel="noopener noreferrer"><img src="img/svg/whatsapp-2.svg" width="57" height="57" alt="WhatsApp"></a></li>
+                      <li><a class="socials__link" href="https://t.me/+77772089955" target="_blank" rel="noopener noreferrer"><img src="img/svg/telegram-2.svg" width="57" height="57" alt="Telegram"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__emails"><a class="footer__email" href="mailto:zeldomkz@mail.ru" target="_blank">zeldomkz@mail.ru</a><span class="footer__label">электронная почта</span></div>
+              </div>
+            </div>
+            <div class="footer__col footer__col-1-2">
+              <ul class="footer__menu" data-aos="fade-up" data-aos-delay="150" data-aos-offset="0">
+                <li><a href="catalog.html" data-slug="catalog">Каталог</a></li>
+                <li><a href="about.html" data-slug="about">О компании</a></li>
+                <li><a href="garanties.html" data-slug="garanties">Гарантия</a></li>
+                <li><a href="buy.html" data-slug="buy">Как купить</a></li>
+                <li><a href="delivery.html" data-slug="delivery">Доставка</a></li>
+                <li><a href="payments.html" data-slug="payments">Оплата</a></li>
+                <li><a href="partners.html" data-slug="partners">Партнеры</a></li>
+                <li><a href="news.html" data-slug="news">Новости</a></li>
+                <li><a href="blog.html" data-slug="blog">Статьи</a></li>
+                <li><a href="contacts.html" data-slug="contacts">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col-1-3">
+              <ul class="footer__addresses" data-aos="fade-right" data-aos-delay="0" data-aos-offset="0">
+                <li>
+                  <p>г. Алматы, проспект Турара Рыскулова, 148а</p><a class="footer__link-map" href="https://yandex.ru/maps/-/CDwGiZyj" target="_blank" rel="noopener noreferrer"><i><img src="img/svg/pin-1.svg" width="35" height="35" alt=""></i><span>Посмотреть схему проезда</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col-1-4">
+              <ul class="footer__links" data-aos="fade-right" data-aos-delay="0" data-aos-offset="0">
+                <li><a class="footer__link m" href="#modal-requisits" data-fancybox-modal>Реквизиты</a></li>
+                <li><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--  /FOOTER  -->
+    </div>
+    <div class="aside" id="aside">
+      <div class="aside__wrap custom-scrollbar">
+        <div class="aside__sup">
+          <div class="aside__search">
+            <form class="search js-search" action="#" method="get">
+              <button class="search__submit" type="submit"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/zoom.svg#q" aria-hidden="true"></use></svg></button>
+              <input class="search__input js-search-input" type="text" name="search" placeholder="Поиск товаров по сайту" required>
+              <div class="search__wrap js-search-result"><span class="search__empty">Ничего не найдено. Попробуйте поменять запрос.</span></div>
+            </form>
+          </div>
+          <button class="aside__close close js-aside-toggle" type="button">
+            <svg width="20" height="20" aria-hidden="true">
+              <use xlink:href="img/svg/close-1.svg#q"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="aside__head">
+          <div class="aside__cat"><a class="cat-link" href="catalog.html"><i><svg width="23" height="23" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cat.svg#q"></use></svg></i></a></div>
+          <div class="aside__btn-1"><a class="circle-btn a" href="cart.html" data-count="8" data-sdf="1"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cart.svg#q"></use></svg></a></div>
+          <div class="aside__btn-1"><a class="circle-btn" href="#modal-login" data-fancybox-modal-2 data-sdf="2" data-status="warn"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/user.svg#q"></use></svg></a></div>
+          <div class="aside__btn-1"><a class="circle-btn" href="admin/comparison.html"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/weight.svg#q"></use></svg></a></div>
+          <div class="aside__btn-1"><a class="circle-btn a" href="#modal-login" data-count="12" data-fancybox-modal-2><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/heart.svg#q"></use></svg></a></div>
+        </div>
+        <div class="aside__menu">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link " href="about.html" data-slug="about">О компании</a></li>
+            <li class="menu__item"><a class="menu__link " href="garanties.html" data-slug="garanties">Гарантия</a></li>
+            <li class="menu__item"><a class="menu__link " href="buy.html" data-slug="buy">Как купить</a></li>
+            <li class="menu__item"><a class="menu__link " href="delivery.html" data-slug="delivery">Доставка</a></li>
+            <li class="menu__item"><a class="menu__link " href="payments.html" data-slug="payments">Оплата</a></li>
+            <li class="menu__item"><a class="menu__link " href="partners.html" data-slug="partners">Партнеры</a></li>
+            <li class="menu__item"><a class="menu__link " href="news.html" data-slug="news">Новости</a></li>
+            <li class="menu__item"><a class="menu__link " href="blog.html" data-slug="blog">Статьи</a></li>
+            <li class="menu__item"><a class="menu__link " href="contacts.html" data-slug="contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="aside__footer">
+          <div class="aside__phone">
+            <div class="box-phones box-phones_b"><span class="box-phones__label js-tooltip-phones_aside" tabindex="0" role="button" data-tooltip-content="#tooltip-phones-aside"><i><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg/phone-1.svg#q"></use></svg></i><span>+7 (777) 208-99-55</span></span></div>
+          </div>
+          <div class="aside__soc-1"><a class="social-link" href="https://t.me/+77772089955" target="_blank" data-title="Telegram"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/tg.svg#q"></use></svg></a></div>
+          <div class="aside__soc-2"><a class="social-link" href="https://wa.me/77772089955" target="_blank" data-title="WhatsApp"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/wa.svg#q"></use></svg></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="aside__overlay js-aside-toggle"></div>
+    <div class="fixmenu" id="fixmenu">
+      <div class="container">
+        <div class="fixmenu__row">
+          <div class="fixmenu__phones">
+            <div class="header__soc-1"><a class="social-link" href="https://t.me/+77772089955" target="_blank" data-title="Telegram"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/tg.svg#q"></use></svg></a></div>
+            <div class="header__soc-2"><a class="social-link" href="https://wa.me/77772089955" target="_blank" data-title="WhatsApp"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/wa.svg#q"></use></svg></a></div>
+            <div class="box-phones"><span class="box-phones__label js-tooltip-phones" tabindex="0" role="button" data-tooltip-content="#tooltip-phones"><i><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg/phone-1.svg#q"></use></svg></i><span>+7 (777) 208-99-55</span></span></div>
+          </div>
+          <div class="fixmenu__search">
+            <form class="search js-search" action="#" method="get">
+              <button class="search__submit" type="submit"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/zoom.svg#q" aria-hidden="true"></use></svg></button>
+              <input class="search__input js-search-input" type="text" name="search" placeholder="Поиск товаров по сайту" required>
+              <div class="search__wrap js-search-result"><span class="search__empty">Ничего не найдено. Попробуйте поменять запрос.</span></div>
+            </form>
+          </div>
+          <div class="fixmenu__cat"><a class="cat-link" href="catalog.html"><i><svg width="23" height="23" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cat.svg#q"></use></svg></i><span>Каталог</span></a></div>
+          <div class="fixmenu__favorite"><a class="circle-btn a" href="#" data-count="12"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/heart.svg#q"></use></svg></a></div>
+          <div class="fixmenu__weight"><a class="circle-btn" href="#"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/weight.svg#q"></use></svg></a></div>
+          <div class="fixmenu__cart"><a class="cart-btn" href="cart.html"><i><svg width="23" height="21" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cart.svg#q"></use></svg></i><span>Корзина</span><small>8</small></a></div>
+          <div class="fixmenu__profile"><a class="profile-btn" href="#" data-status="warn"><i><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/user.svg#q"></use></svg></i><span>Мой профиль</span></a></div>
+          <div class="fixmenu__burger">
+            <button class="circle-btn js-aside-toggle" type="button"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/burger.svg#q"></use></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Модальное окно Получите консультацию  -->
+    <div class="modal" id="modal-consult" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Получите <strong>профессиональную</strong> консультацию</span>
+          <div class="modal__box"><i><img src="img/modal/chat-1.svg" width="57" height="57" alt=""></i>
+            <p>Оставьте свои контактные данные, мы свяжемся с вами в&nbsp;течение 10&nbsp;минут и ответим на все интересующие вопросы.</p>
+          </div>
+          <form class="form modal__form" action="thanks.html" method="post" autocomplete="off">
+            <div class="form__row-1">
+              <div class="form__col-1-1">
+                <div class="messengers js-messengers"><span class="messengers__label">Как с вами связаться?</span>
+                  <input class="js-messengers-inp" type="hidden" name="messenger" value="WhatsApp">
+                  <div class="messengers__wrap"><a class="messengers__item js-messengers-btn active" tabindex="0" role="button" title="WhatsApp"><img src="img/svg/mess-wa.svg" width="64" height="64" alt="WhatsApp"></a><a class="messengers__item js-messengers-btn" tabindex="0" role="button" title="Telegram"><img src="img/svg/mess-tg.svg" width="64" height="64" alt="Telegram"></a><a class="messengers__item js-messengers-btn" tabindex="0" role="button" title="Email"><img src="img/svg/mess-email.svg" width="64" height="64" alt="Email"></a></div>
+                </div>
+              </div>
+              <div class="form__col-1-2">
+                <div class="form__box-input">
+                  <input class="form__input form__input_v2 js-input-phone" type="tel" name="userphone" placeholder="Введите ваш номер телефона" required>
+                  <input class="form__input form__input_v2 js-input-email" type="email" name="userphone" placeholder="Введите ваш E-mail" disabled style="display:none">
+                </div>
+              </div>
+            </div>
+            <div class="form__box-submit-1 text-center">
+              <button class="btn1 btn1_small form__submit" type="submit"><span>Получить консультацию</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              <input type="hidden" name="title" value="Получите профессиональную консультацию">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Получите консультацию  -->
+    <!--  Модальное окно Реквизиты  -->
+    <div class="modal" id="modal-requisits" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title"><strong>Реквизиты для оплаты заказов</strong> в&nbsp;интернет-магазине «Земледел» через расчетный счет:</span>
+          <div class="requisits">
+            <div class="requisits__title">ТОО «ЗЕЛЕНЫЙ ДОМ KZ»</div>
+            <ul class="requisits__list">
+              <li>
+                <p>210140001074</p><small>БИН</small>
+              </li>
+              <li>
+                <p>590400012448</p><small>РНН</small>
+              </li>
+              <li>
+                <p>17</p><small>Код Бенефициара (КБе)</small>
+              </li>
+              <li>
+                <p>АО «Народный Банк Казахстана»</p><small>Банк</small>
+              </li>
+              <li>
+                <p>HSBKKZKX</p><small>БИК</small>
+              </li>
+            </ul>
+            <div class="requisits__footer">
+              <ul class="requisits__list">
+                <li>
+                  <p>KZ20601A291000504211</p><small>Расчетный счет, KZT</small>
+                </li>
+                <li>
+                  <p>KZ41601A291000504221</p><small>Расчетный счет, USD</small>
+                </li>
+                <li>
+                  <p>KZ62601A291000504231</p><small>Расчетный счет, RUB</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Реквизиты  -->
+    <!--  Модальное окно Реквизиты 2  -->
+    <div class="modal" id="modal-requisits-2" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title"><strong>Реквизиты для оплаты заказов</strong> в&nbsp;интернет-магазине «Земледел» через расчетный счет:</span>
+          <div class="requisits">
+            <div class="requisits__title">ТОО «ЗЕЛЕНЫЙ ДОМ KZ»</div>
+            <ul class="requisits__list">
+              <li>
+                <p>KZ20722S000006784341</p><small>Расчетный счет, KZT</small>
+              </li>
+              <li>
+                <p>CASPKZKA</p><small>БИК</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Реквизиты  -->
+    <!--  Модальное окно Выйти из аккаунта  -->
+    <div class="modal modal_w592" id="modal-logout" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Вы уверены, что хотите выйти из аккаунта?</span>
+          <div class="modal__subtitle-1">
+            <p>В следующий раз для входа будет необходимо <span class="d-ib">ввести логин и пароль.</span></p>
+          </div>
+          <div class="modal__btn-double">
+            <div><a class="btn2 btn2_small btn2_red" href="../">Выйти из аккаунта</a></div>
+            <div>
+              <button class="btn2 btn2_small" type="button" data-fancybox-close>Остаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Выйти из аккаунта  -->
+    <!--  Модальное окно Вход на сайт  -->
+    <div class="modal modal_w660" id="modal-login" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Вход на сайт «Земледел»</span>
+          <div class="modal__subtitle-1">
+            <p>Чтобы войти на сайт, введите в полях ниже адрес электронной <span class="d-ib">почты и пароль от аккаунта.</span></p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2">
+                <input class="form__input form__input_v2" type="email" name="useremail" placeholder="Адрес электронной почты" required>
+              </div>
+              <div class="form__box-2 form__box-pass js-hide-pass">
+                <input class="form__input form__input_v2 js-hide-pass-inp" type="password" name="userpassword" placeholder="Пароль" required>
+                <button class="form__btn-pass js-hide-pass-btn" type="button"><svg class="h" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-hide.svg#q"></use></svg>
+<svg class="o" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-show.svg#q"></use></svg>
+                </button>
+              </div>
+              <div class="form__box-forgot"><a class="form__forgot" href="#modal-registr-2" data-fancybox-modal-2>Не помню пароль</a></div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Войти на сайт</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__sub">У вас еще нет аккаунта? <a class="link-1" href="#modal-registr" data-fancybox-modal-2>Зарегистрируйтесь</a></div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Вход на сайт  -->
+    <!--  Модальное окно Регистрация на сайте  -->
+    <div class="modal modal_w660" id="modal-registr" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Регистрация на сайте «Земледел»</span>
+          <div class="modal__subtitle-1">
+            <p>Чтобы зарегистрироваться на сайте, введите адрес своей электронной почты, мы вышлем вам одноразовый код для регистрации.</p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2">
+                <input class="form__input form__input_v2" type="email" name="useremail" placeholder="Адрес электронной почты" required>
+              </div>
+              <div class="form__box-2 form__box-pass js-hide-pass">
+                <input class="form__input form__input_v2 js-hide-pass-inp" type="password" name="userpassword" placeholder="Пароль" required>
+                <button class="form__btn-pass js-hide-pass-btn" type="button"><svg class="h" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-hide.svg#q"></use></svg>
+<svg class="o" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-show.svg#q"></use></svg>
+                </button>
+              </div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Войти на сайт</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__sub">У вас еще нет аккаунта? <a class="link-1" href="#modal-login" data-fancybox-modal-2>Войдите</a></div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Регистрация на сайте  -->
+    <!--  Модальное окно Регистрация на сайте 2 -->
+    <div class="modal modal_w660" id="modal-registr-2" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Регистрация на сайте «Земледел»</span>
+          <div class="modal__subtitle-1">
+            <p>На вашу электронную почту <strong style="color:#000">[example@mail.com]</strong> отправлен одноразовый 4-значный код. Введите его ниже, чтобы подтвердить свою почту.</p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2">
+                <input class="form__input form__input_v2" type="text" name="usercodeaccept" placeholder="Код из письма" required>
+              </div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Проверить</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Регистрация на сайте 2  -->
+    <!--  Модальное окно Восстановление доступа -->
+    <div class="modal modal_w660" id="modal-registr-3" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Восстановление доступа к&nbsp;аккаунту</span>
+          <div class="modal__subtitle-1">
+            <p>На вашу электронную почту <strong style="color:#000">[example@mail.com]</strong> отправлен одноразовый 4-значный код. Введите его ниже, чтобы подтвердить свою почту.</p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2">
+                <input class="form__input form__input_v2" type="text" name="usercodeaccept" placeholder="Код из письма" required>
+              </div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Проверить</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Восстановление доступа  -->
+    <!--  Модальное окно Восстановление доступа  -->
+    <div class="modal modal_w660" id="modal-registr-4" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Восстановление доступа к&nbsp;аккаунту</span>
+          <div class="modal__subtitle-1">
+            <p>Почта подтверждена! Придумайте надежный пароль <span class="d-ib">для своего аккаунта.</span></p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2 form__box-pass js-hide-pass">
+                <input class="form__input form__input_v2 js-hide-pass-inp" type="password" name="userpassword1" placeholder="Введите новый пароль" required>
+                <button class="form__btn-pass js-hide-pass-btn" type="button"><svg class="h" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-hide.svg#q"></use></svg>
+<svg class="o" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-show.svg#q"></use></svg>
+                </button>
+              </div>
+              <div class="form__box-2 form__box-pass js-hide-pass">
+                <input class="form__input form__input_v2 js-hide-pass-inp" type="password" name="userpassword2" placeholder="Повторите новый пароль" required>
+                <button class="form__btn-pass js-hide-pass-btn" type="button"><svg class="h" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-hide.svg#q"></use></svg>
+<svg class="o" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-show.svg#q"></use></svg>
+                </button>
+              </div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Сохранить новый пароль</span><i class="btn1__safe"><svg width="21" height="22" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/uil_save.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Восстановление доступа  -->
+    <!--  Модальное окно Дипломы  -->
+    <div class="modal modal_w1192" id="modal-diploms" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title"><strong>Благодарственные письма</strong> компании «Земледел» от&nbsp;партнеров и клиентов</span>
+          <div class="modal__diploms" id="diploms">
+            <div class="swiper js-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="modal__diploms-slide">
+                    <div class="modal__diploms-pic"><img src="img/diploms/1.png" width="397" height="561" alt=""></div>
+                    <div class="modal__diploms-desc"><span class="modal__diploms-title">«Название компании»</span><span class="modal__diploms-publish">24 июня 2023</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="modal__diploms-slide">
+                    <div class="modal__diploms-pic"><img src="img/diploms/1.png" width="397" height="561" alt=""></div>
+                    <div class="modal__diploms-desc"><span class="modal__diploms-title">«Название компании»</span><span class="modal__diploms-publish">24 июня 2023</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="modal__diploms-slide">
+                    <div class="modal__diploms-pic"><img src="img/diploms/1.png" width="397" height="561" alt=""></div>
+                    <div class="modal__diploms-desc"><span class="modal__diploms-title">«Название компании»</span><span class="modal__diploms-publish">24 июня 2023</span></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="modal__diploms-slide">
+                    <div class="modal__diploms-pic"><img src="img/diploms/1.png" width="397" height="561" alt=""></div>
+                    <div class="modal__diploms-desc"><span class="modal__diploms-title">«Название компании»</span><span class="modal__diploms-publish">24 июня 2023</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__diploms-bottom">
+              <div class="modal__diploms-scrollbar">
+                <div class="swiper-scrolbar js-scrollbar"></div>
+              </div>
+              <div class="slider__nav modal__diploms-nav"><span class="slider__arrow slider__arrow_prev js-prev" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-prev.svg#q"></use></svg></span><span class="slider__arrow slider__arrow_next js-next" role="button"><svg width="50" height="50" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/arrow-next.svg#q"></use></svg></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Дипломы  -->
+    <!--status - ok, wrong-->
+    <div class="add-to-cart" id="add-to-cart" data-status="ok"><i></i>
+      <p>Товар добавлен <br>в корзину</p><a href="goods.html"><svg width="44" height="44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg2/arrow-add.svg#q"></use></svg></a>
+    </div>
+    <div hidden>
+      <div id="tooltip-phones">
+        <ul class="box-phones__list">
+          <li><a href="tel:+77772089955">+7 (777) 208-99-55</a></li>
+        </ul>
+      </div>
+      <div id="tooltip-phones-aside">
+        <ul class="box-phones__list box-phones__list_aside">
+          <li><a href="tel:+77772089955">+7 (777) 208-99-55</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>

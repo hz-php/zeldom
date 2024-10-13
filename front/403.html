@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#fff">
+    <title>Интернет-магазин товаров для промышленного земледелия</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="nofollow,noindex">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <!--[if IE]> <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+    <link href="css/libs.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script>
+      var url_api = 'https://cases.9n.by/test/zemledel/api/';
+      //- var url_api = 'http://localhost/zemledel/site/build/api/';
+    </script>
+  </head>
+  <body class="page-not-found">
+    <div class="main">
+      <!--  TOP  -->
+      <section class="top top_contacts" id="top">
+        <div class="container">
+          <!--  HEADER  -->
+          <header class="header display-flex">
+            <div class="header__logo" data-aos="fade-down"><a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="68" height="60"></a></div>
+            <div class="header__wrap">
+              <div class="header__row-1 display-flex align-center">
+                <div class="header__cat" data-aos="fade-down" data-aos-delay="50"><a class="cat-link" href="catalog.html"><i><svg width="23" height="23" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cat.svg#q"></use></svg></i><span>Каталог</span></a></div>
+                <div class="header__cart_mob" data-aos="fade-down" data-aos-delay="200"><a class="circle-btn a" href="cart.html" data-count="12"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cart.svg#q"></use></svg></a></div>
+                <div class="header__profile_mob" data-aos="fade-down" data-aos-delay="200"><a class="circle-btn" href="#modal-login" data-fancybox-modal-2 data-status="warn"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/user.svg#q"></use></svg></a></div>
+                <div class="header__zoom" data-aos="fade-down" data-aos-delay="150"><a class="circle-btn" href="search.html"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/zoom.svg#q"></use></svg></a></div>
+                <div class="header__burger" data-aos="fade-down" data-aos-delay="200">
+                  <button class="circle-btn js-aside-toggle" type="button"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/burger.svg#q"></use></svg></button>
+                </div>
+                <div class="header__search" data-aos="fade-down" data-aos-delay="150">
+                  <form class="search js-search" action="search.html" method="get">
+                    <button class="search__submit" type="submit"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/zoom.svg#q" aria-hidden="true"></use></svg></button>
+                    <input class="search__input js-search-input" type="text" name="search" placeholder="Поиск товаров по сайту" required>
+                    <div class="search__wrap js-search-result">
+                      <div class="search__bar">
+                        <div class="search__row">
+                          <div class="search__category">Категории</div>
+                          <div class="search__list">
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена томатов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена арбузов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена огурцов</a></div>
+                            <div class="search__item"><a href="goods.html">Обработка <strong>Сем</strong>ян</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена томатов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена арбузов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена огурцов</a></div>
+                            <div class="search__item"><a href="goods.html"> <strong>Сем</strong>ена огурцов</a></div>
+                          </div>
+                        </div>
+                        <div class="search__row">
+                          <div class="search__category">Товары</div>
+                          <div class="search__list">
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                            <div class="search__block"><a class="search__block-img" href="goods.html"><img src="img/catalog/pic-2-1.png" width="58" height="40" alt=""></a>
+                              <div><a class="search__block-link" href="goods.html">Фарао F1 (Farao F1) <strong>сем</strong>ена арбуза</a><span class="search__block-sub">28 000 ₸</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="header__favorite" data-aos="fade-down" data-aos-delay="200"><a class="circle-btn a" href="#modal-login" data-fancybox-modal-2 data-count="12"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/heart.svg#q"></use></svg></a></div>
+                <div class="header__weight" data-aos="fade-down" data-aos-delay="250"><a class="circle-btn" href="admin/comparison.html"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/weight.svg#q"></use></svg></a></div>
+                <div class="header__cart" data-aos="fade-down" data-aos-delay="300"><a class="cart-btn" href="cart.html"><i><svg width="23" height="21" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cart.svg#q"></use></svg></i><span>Корзина</span><small>8</small></a></div>
+                <div class="header__profile" data-aos="fade-down" data-aos-delay="350"><a class="profile-btn" href="#modal-login" data-fancybox-modal-2 data-status="warn"><i><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/user.svg#q"></use></svg></i><span>Мой профиль</span></a></div>
+              </div>
+              <div class="header__row-2 display-flex align-center">
+                <div class="header__phones" data-aos="fade-down" data-aos-delay="400">
+                  <div class="box-phones"><span class="box-phones__label js-tooltip-phones" tabindex="0" role="button" data-tooltip-content="#tooltip-phones"><i><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg/phone-1.svg#q"></use></svg></i><span>+7 (777) 208-99-55</span></span></div>
+                </div>
+                <div class="header__soc-1" data-aos="fade-down" data-aos-delay="450"><a class="social-link" href="https://t.me/+77772089955" target="_blank" data-title="Telegram"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/tg.svg#q"></use></svg></a></div>
+                <div class="header__soc-2" data-aos="fade-down" data-aos-delay="450"><a class="social-link" href="https://wa.me/77772089955" target="_blank" data-title="WhatsApp"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/wa.svg#q"></use></svg></a></div>
+                <div class="header__nav" data-aos="fade-down" data-aos-delay="500">
+                  <ul class="menu">
+                    <li class="menu__item"><a class="menu__link " href="about.html" data-slug="about">О компании</a></li>
+                    <li class="menu__item"><a class="menu__link " href="garanties.html" data-slug="garanties">Гарантия</a></li>
+                    <li class="menu__item"><a class="menu__link " href="buy.html" data-slug="buy">Как купить</a></li>
+                    <li class="menu__item"><a class="menu__link " href="delivery.html" data-slug="delivery">Доставка</a></li>
+                    <li class="menu__item"><a class="menu__link " href="payments.html" data-slug="payments">Оплата</a></li>
+                    <li class="menu__item"><a class="menu__link " href="partners.html" data-slug="partners">Партнеры</a></li>
+                    <li class="menu__item"><a class="menu__link " href="news.html" data-slug="news">Новости</a></li>
+                    <li class="menu__item"><a class="menu__link " href="blog.html" data-slug="blog">Статьи</a></li>
+                    <li class="menu__item"><a class="menu__link " href="contacts.html" data-slug="contacts">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!--  HEADER  -->
+          <div class="not-found"><span class="not-found__label" data-aos="fade-up" data-aos-delay="0">403</span>
+            <h1 class="not-found__title" data-aos="fade-up" data-aos-delay="100">В доступе отказано</h1>
+            <div class="not-found__btns" data-aos="fade-up" data-aos-delay="200"><a class="btn1 top__btn" href="index.html"><span>Вернуться на главную</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></a></div>
+          </div>
+        </div>
+      </section>
+      <!--  FOOTER  -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__col footer__col-1-1">
+              <div class="footer__logo" data-aos="fade-right" data-aos-delay="0" data-aos-offset="0"><img src="img/logo-2.svg" width="202" height="202" alt=""></div>
+              <div class="footer__contacts" data-aos="fade-right" data-aos-delay="50" data-aos-offset="0">
+                <div class="footer__phones">
+                  <div class="footer__phones-1">
+                    <div class="box-phones"><span class="box-phones__label js-tooltip-phones_aside" tabindex="0" role="button" data-tooltip-content="#tooltip-phones-aside"><i><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg/phone-1.svg#q"></use></svg></i><span>+7 (777) 208-99-55</span></span></div><span class="footer__label">наш телефон</span>
+                  </div>
+                  <div class="footer__socials" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0">
+                    <ul class="socials">
+                      <li><a class="socials__link" href="https://wa.me/77772089955" target="_blank" rel="noopener noreferrer"><img src="img/svg/whatsapp-2.svg" width="57" height="57" alt="WhatsApp"></a></li>
+                      <li><a class="socials__link" href="https://t.me/+77772089955" target="_blank" rel="noopener noreferrer"><img src="img/svg/telegram-2.svg" width="57" height="57" alt="Telegram"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__emails"><a class="footer__email" href="mailto:zeldomkz@mail.ru" target="_blank">zeldomkz@mail.ru</a><span class="footer__label">электронная почта</span></div>
+              </div>
+            </div>
+            <div class="footer__col footer__col-1-2">
+              <ul class="footer__menu" data-aos="fade-up" data-aos-delay="150" data-aos-offset="0">
+                <li><a href="catalog.html" data-slug="catalog">Каталог</a></li>
+                <li><a href="about.html" data-slug="about">О компании</a></li>
+                <li><a href="garanties.html" data-slug="garanties">Гарантия</a></li>
+                <li><a href="buy.html" data-slug="buy">Как купить</a></li>
+                <li><a href="delivery.html" data-slug="delivery">Доставка</a></li>
+                <li><a href="payments.html" data-slug="payments">Оплата</a></li>
+                <li><a href="partners.html" data-slug="partners">Партнеры</a></li>
+                <li><a href="news.html" data-slug="news">Новости</a></li>
+                <li><a href="blog.html" data-slug="blog">Статьи</a></li>
+                <li><a href="contacts.html" data-slug="contacts">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col-1-3">
+              <ul class="footer__addresses" data-aos="fade-right" data-aos-delay="0" data-aos-offset="0">
+                <li>
+                  <p>г. Алматы, проспект Турара Рыскулова, 148а</p><a class="footer__link-map" href="https://yandex.ru/maps/-/CDwGiZyj" target="_blank" rel="noopener noreferrer"><i><img src="img/svg/pin-1.svg" width="35" height="35" alt=""></i><span>Посмотреть схему проезда</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col footer__col-1-4">
+              <ul class="footer__links" data-aos="fade-right" data-aos-delay="0" data-aos-offset="0">
+                <li><a class="footer__link m" href="#modal-requisits" data-fancybox-modal>Реквизиты</a></li>
+                <li><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--  /FOOTER  -->
+    </div>
+    <div class="aside" id="aside">
+      <div class="aside__wrap custom-scrollbar">
+        <div class="aside__sup">
+          <div class="aside__search">
+            <form class="search js-search" action="#" method="get">
+              <button class="search__submit" type="submit"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/zoom.svg#q" aria-hidden="true"></use></svg></button>
+              <input class="search__input js-search-input" type="text" name="search" placeholder="Поиск товаров по сайту" required>
+              <div class="search__wrap js-search-result"><span class="search__empty">Ничего не найдено. Попробуйте поменять запрос.</span></div>
+            </form>
+          </div>
+          <button class="aside__close close js-aside-toggle" type="button">
+            <svg width="20" height="20" aria-hidden="true">
+              <use xlink:href="img/svg/close-1.svg#q"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="aside__head">
+          <div class="aside__cat"><a class="cat-link" href="catalog.html"><i><svg width="23" height="23" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cat.svg#q"></use></svg></i></a></div>
+          <div class="aside__btn-1"><a class="circle-btn a" href="cart.html" data-count="8" data-sdf="1"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cart.svg#q"></use></svg></a></div>
+          <div class="aside__btn-1"><a class="circle-btn" href="#modal-login" data-fancybox-modal-2 data-sdf="2" data-status="warn"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/user.svg#q"></use></svg></a></div>
+          <div class="aside__btn-1"><a class="circle-btn" href="admin/comparison.html"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/weight.svg#q"></use></svg></a></div>
+          <div class="aside__btn-1"><a class="circle-btn a" href="#modal-login" data-count="12" data-fancybox-modal-2><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/heart.svg#q"></use></svg></a></div>
+        </div>
+        <div class="aside__menu">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link " href="about.html" data-slug="about">О компании</a></li>
+            <li class="menu__item"><a class="menu__link " href="garanties.html" data-slug="garanties">Гарантия</a></li>
+            <li class="menu__item"><a class="menu__link " href="buy.html" data-slug="buy">Как купить</a></li>
+            <li class="menu__item"><a class="menu__link " href="delivery.html" data-slug="delivery">Доставка</a></li>
+            <li class="menu__item"><a class="menu__link " href="payments.html" data-slug="payments">Оплата</a></li>
+            <li class="menu__item"><a class="menu__link " href="partners.html" data-slug="partners">Партнеры</a></li>
+            <li class="menu__item"><a class="menu__link " href="news.html" data-slug="news">Новости</a></li>
+            <li class="menu__item"><a class="menu__link " href="blog.html" data-slug="blog">Статьи</a></li>
+            <li class="menu__item"><a class="menu__link " href="contacts.html" data-slug="contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="aside__footer">
+          <div class="aside__phone">
+            <div class="box-phones box-phones_b"><span class="box-phones__label js-tooltip-phones_aside" tabindex="0" role="button" data-tooltip-content="#tooltip-phones-aside"><i><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg/phone-1.svg#q"></use></svg></i><span>+7 (777) 208-99-55</span></span></div>
+          </div>
+          <div class="aside__soc-1"><a class="social-link" href="https://t.me/+77772089955" target="_blank" data-title="Telegram"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/tg.svg#q"></use></svg></a></div>
+          <div class="aside__soc-2"><a class="social-link" href="https://wa.me/77772089955" target="_blank" data-title="WhatsApp"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/wa.svg#q"></use></svg></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="aside__overlay js-aside-toggle"></div>
+    <div class="fixmenu" id="fixmenu">
+      <div class="container">
+        <div class="fixmenu__row">
+          <div class="fixmenu__phones">
+            <div class="header__soc-1"><a class="social-link" href="https://t.me/+77772089955" target="_blank" data-title="Telegram"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/tg.svg#q"></use></svg></a></div>
+            <div class="header__soc-2"><a class="social-link" href="https://wa.me/77772089955" target="_blank" data-title="WhatsApp"><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/wa.svg#q"></use></svg></a></div>
+            <div class="box-phones"><span class="box-phones__label js-tooltip-phones" tabindex="0" role="button" data-tooltip-content="#tooltip-phones"><i><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg/phone-1.svg#q"></use></svg></i><span>+7 (777) 208-99-55</span></span></div>
+          </div>
+          <div class="fixmenu__search">
+            <form class="search js-search" action="#" method="get">
+              <button class="search__submit" type="submit"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/zoom.svg#q" aria-hidden="true"></use></svg></button>
+              <input class="search__input js-search-input" type="text" name="search" placeholder="Поиск товаров по сайту" required>
+              <div class="search__wrap js-search-result"><span class="search__empty">Ничего не найдено. Попробуйте поменять запрос.</span></div>
+            </form>
+          </div>
+          <div class="fixmenu__cat"><a class="cat-link" href="catalog.html"><i><svg width="23" height="23" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cat.svg#q"></use></svg></i><span>Каталог</span></a></div>
+          <div class="fixmenu__favorite"><a class="circle-btn a" href="#" data-count="12"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/heart.svg#q"></use></svg></a></div>
+          <div class="fixmenu__weight"><a class="circle-btn" href="#"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/weight.svg#q"></use></svg></a></div>
+          <div class="fixmenu__cart"><a class="cart-btn" href="cart.html"><i><svg width="23" height="21" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/cart.svg#q"></use></svg></i><span>Корзина</span><small>8</small></a></div>
+          <div class="fixmenu__profile"><a class="profile-btn" href="#" data-status="warn"><i><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/user.svg#q"></use></svg></i><span>Мой профиль</span></a></div>
+          <div class="fixmenu__burger">
+            <button class="circle-btn js-aside-toggle" type="button"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/burger.svg#q"></use></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Модальное окно Получите консультацию  -->
+    <div class="modal" id="modal-consult" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Получите <strong>профессиональную</strong> консультацию</span>
+          <div class="modal__box"><i><img src="img/modal/chat-1.svg" width="57" height="57" alt=""></i>
+            <p>Оставьте свои контактные данные, мы свяжемся с вами в&nbsp;течение 10&nbsp;минут и ответим на все интересующие вопросы.</p>
+          </div>
+          <form class="form modal__form" action="thanks.html" method="post" autocomplete="off">
+            <div class="form__row-1">
+              <div class="form__col-1-1">
+                <div class="messengers js-messengers"><span class="messengers__label">Как с вами связаться?</span>
+                  <input class="js-messengers-inp" type="hidden" name="messenger" value="WhatsApp">
+                  <div class="messengers__wrap"><a class="messengers__item js-messengers-btn active" tabindex="0" role="button" title="WhatsApp"><img src="img/svg/mess-wa.svg" width="64" height="64" alt="WhatsApp"></a><a class="messengers__item js-messengers-btn" tabindex="0" role="button" title="Telegram"><img src="img/svg/mess-tg.svg" width="64" height="64" alt="Telegram"></a><a class="messengers__item js-messengers-btn" tabindex="0" role="button" title="Email"><img src="img/svg/mess-email.svg" width="64" height="64" alt="Email"></a></div>
+                </div>
+              </div>
+              <div class="form__col-1-2">
+                <div class="form__box-input">
+                  <input class="form__input form__input_v2 js-input-phone" type="tel" name="userphone" placeholder="Введите ваш номер телефона" required>
+                  <input class="form__input form__input_v2 js-input-email" type="email" name="userphone" placeholder="Введите ваш E-mail" disabled style="display:none">
+                </div>
+              </div>
+            </div>
+            <div class="form__box-submit-1 text-center">
+              <button class="btn1 btn1_small form__submit" type="submit"><span>Получить консультацию</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              <input type="hidden" name="title" value="Получите профессиональную консультацию">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Получите консультацию  -->
+    <!--  Модальное окно Реквизиты  -->
+    <div class="modal" id="modal-requisits" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title"><strong>Реквизиты для оплаты заказов</strong> в&nbsp;интернет-магазине «Земледел» через расчетный счет:</span>
+          <div class="requisits">
+            <div class="requisits__title">ТОО «ЗЕЛЕНЫЙ ДОМ KZ»</div>
+            <ul class="requisits__list">
+              <li>
+                <p>210140001074</p><small>БИН</small>
+              </li>
+              <li>
+                <p>590400012448</p><small>РНН</small>
+              </li>
+              <li>
+                <p>17</p><small>Код Бенефициара (КБе)</small>
+              </li>
+              <li>
+                <p>АО «Народный Банк Казахстана»</p><small>Банк</small>
+              </li>
+              <li>
+                <p>HSBKKZKX</p><small>БИК</small>
+              </li>
+            </ul>
+            <div class="requisits__footer">
+              <ul class="requisits__list">
+                <li>
+                  <p>KZ20601A291000504211</p><small>Расчетный счет, KZT</small>
+                </li>
+                <li>
+                  <p>KZ41601A291000504221</p><small>Расчетный счет, USD</small>
+                </li>
+                <li>
+                  <p>KZ62601A291000504231</p><small>Расчетный счет, RUB</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Реквизиты  -->
+    <!--  Модальное окно Реквизиты 2  -->
+    <div class="modal" id="modal-requisits-2" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title"><strong>Реквизиты для оплаты заказов</strong> в&nbsp;интернет-магазине «Земледел» через расчетный счет:</span>
+          <div class="requisits">
+            <div class="requisits__title">ТОО «ЗЕЛЕНЫЙ ДОМ KZ»</div>
+            <ul class="requisits__list">
+              <li>
+                <p>KZ20722S000006784341</p><small>Расчетный счет, KZT</small>
+              </li>
+              <li>
+                <p>CASPKZKA</p><small>БИК</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Реквизиты  -->
+    <!--  Модальное окно Выйти из аккаунта  -->
+    <div class="modal modal_w592" id="modal-logout" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Вы уверены, что хотите выйти из аккаунта?</span>
+          <div class="modal__subtitle-1">
+            <p>В следующий раз для входа будет необходимо <span class="d-ib">ввести логин и пароль.</span></p>
+          </div>
+          <div class="modal__btn-double">
+            <div><a class="btn2 btn2_small btn2_red" href="../">Выйти из аккаунта</a></div>
+            <div>
+              <button class="btn2 btn2_small" type="button" data-fancybox-close>Остаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Выйти из аккаунта  -->
+    <!--  Модальное окно Вход на сайт  -->
+    <div class="modal modal_w660" id="modal-login" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Вход на сайт «Земледел»</span>
+          <div class="modal__subtitle-1">
+            <p>Чтобы войти на сайт, введите в полях ниже адрес электронной <span class="d-ib">почты и пароль от аккаунта.</span></p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2">
+                <input class="form__input form__input_v2" type="email" name="useremail" placeholder="Адрес электронной почты" required>
+              </div>
+              <div class="form__box-2 form__box-pass js-hide-pass">
+                <input class="form__input form__input_v2 js-hide-pass-inp" type="password" name="userpassword" placeholder="Пароль" required>
+                <button class="form__btn-pass js-hide-pass-btn" type="button"><svg class="h" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-hide.svg#q"></use></svg>
+<svg class="o" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-show.svg#q"></use></svg>
+                </button>
+              </div>
+              <div class="form__box-forgot"><a class="form__forgot" href="#modal-registr-2" data-fancybox-modal-2>Не помню пароль</a></div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Войти на сайт</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__sub">У вас еще нет аккаунта? <a class="link-1" href="#modal-registr" data-fancybox-modal-2>Зарегистрируйтесь</a></div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Вход на сайт  -->
+    <!--  Модальное окно Регистрация на сайте  -->
+    <div class="modal modal_w660" id="modal-registr" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Регистрация на сайте «Земледел»</span>
+          <div class="modal__subtitle-1">
+            <p>Чтобы зарегистрироваться на сайте, введите адрес своей электронной почты, мы вышлем вам одноразовый код для регистрации.</p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2">
+                <input class="form__input form__input_v2" type="email" name="useremail" placeholder="Адрес электронной почты" required>
+              </div>
+              <div class="form__box-2 form__box-pass js-hide-pass">
+                <input class="form__input form__input_v2 js-hide-pass-inp" type="password" name="userpassword" placeholder="Пароль" required>
+                <button class="form__btn-pass js-hide-pass-btn" type="button"><svg class="h" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-hide.svg#q"></use></svg>
+<svg class="o" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-show.svg#q"></use></svg>
+                </button>
+              </div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Войти на сайт</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__sub">У вас еще нет аккаунта? <a class="link-1" href="#modal-login" data-fancybox-modal-2>Войдите</a></div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Регистрация на сайте  -->
+    <!--  Модальное окно Регистрация на сайте 2 -->
+    <div class="modal modal_w660" id="modal-registr-2" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Регистрация на сайте «Земледел»</span>
+          <div class="modal__subtitle-1">
+            <p>На вашу электронную почту <strong style="color:#000">[example@mail.com]</strong> отправлен одноразовый 4-значный код. Введите его ниже, чтобы подтвердить свою почту.</p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2">
+                <input class="form__input form__input_v2" type="text" name="usercodeaccept" placeholder="Код из письма" required>
+              </div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Проверить</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Регистрация на сайте 2  -->
+    <!--  Модальное окно Восстановление доступа -->
+    <div class="modal modal_w660" id="modal-registr-3" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Восстановление доступа к&nbsp;аккаунту</span>
+          <div class="modal__subtitle-1">
+            <p>На вашу электронную почту <strong style="color:#000">[example@mail.com]</strong> отправлен одноразовый 4-значный код. Введите его ниже, чтобы подтвердить свою почту.</p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2">
+                <input class="form__input form__input_v2" type="text" name="usercodeaccept" placeholder="Код из письма" required>
+              </div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Проверить</span><i class="btn1__arr"><svg width="40" height="26" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/btn-arrow.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Восстановление доступа  -->
+    <!--  Модальное окно Восстановление доступа  -->
+    <div class="modal modal_w660" id="modal-registr-4" style="display:none">
+      <div class="modal__wrap">
+        <button class="modal__close" type="button" data-fancybox-close aria-label="Close">
+          <svg aria-hidden="true" width="26" height="26">
+            <use xlink:href="img/svg/close-1.svg#q"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="modal__title">Восстановление доступа к&nbsp;аккаунту</span>
+          <div class="modal__subtitle-1">
+            <p>Почта подтверждена! Придумайте надежный пароль <span class="d-ib">для своего аккаунта.</span></p>
+          </div>
+          <div class="modal__form">
+            <form class="form" method="post" action="#">
+              <div class="form__box-2 form__box-pass js-hide-pass">
+                <input class="form__input form__input_v2 js-hide-pass-inp" type="password" name="userpassword1" placeholder="Введите новый пароль" required>
+                <button class="form__btn-pass js-hide-pass-btn" type="button"><svg class="h" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-hide.svg#q"></use></svg>
+<svg class="o" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-show.svg#q"></use></svg>
+                </button>
+              </div>
+              <div class="form__box-2 form__box-pass js-hide-pass">
+                <input class="form__input form__input_v2 js-hide-pass-inp" type="password" name="userpassword2" placeholder="Повторите новый пароль" required>
+                <button class="form__btn-pass js-hide-pass-btn" type="button"><svg class="h" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-hide.svg#q"></use></svg>
+<svg class="o" width="34" height="34" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/modal/eye-show.svg#q"></use></svg>
+                </button>
+              </div>
+              <div class="form__box-submit-2 text-center">
+                <button class="btn1 btn1_small form__submit" type="submit"><span>Сохранить новый пароль</span><i class="btn1__safe"><svg width="21" height="22" xmlns="http://www.w3.org/2000/svg"><use xlink:href="img/svg/uil_save.svg#q"></use></svg></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  /Модальное окно Восстановление доступа  -->
+    <!--status - ok, wrong-->
+    <div class="add-to-cart" id="add-to-cart" data-status="ok"><i></i>
+      <p>Товар добавлен <br>в корзину</p><a href="goods.html"><svg width="44" height="44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use xlink:href="img/svg2/arrow-add.svg#q"></use></svg></a>
+    </div>
+    <div hidden>
+      <div id="tooltip-phones">
+        <ul class="box-phones__list">
+          <li><a href="tel:+77772089955">+7 (777) 208-99-55</a></li>
+        </ul>
+      </div>
+      <div id="tooltip-phones-aside">
+        <ul class="box-phones__list box-phones__list_aside">
+          <li><a href="tel:+77772089955">+7 (777) 208-99-55</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>

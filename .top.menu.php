@@ -1,0 +1,67 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О компании", 
+		"about/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Гарантия", 
+		"guaranty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Как купить", 
+		"buy/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доставка", 
+		"delivery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Оплата", 
+		"payments/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнеры", 
+		"partners", 
+		Array(), 
+		Array(), 
+		"\$USER->IsAuthorized()" 
+	),
+	Array(
+		"Новости", 
+		"news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Статьи", 
+		"articles/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
