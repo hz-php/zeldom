@@ -27,7 +27,7 @@ $this->setFrameMode(true);
                             <img width="490" src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" height="280" alt="">
                         </div>
                         <div class="top__slide-desc">
-                            <span class="top__slide-title" style="width: 50%;"><?= $item['NAME'] ?></span>
+                            <span class="top__slide-title" style="width: 75%;"><?= $item['NAME'] ?></span>
                             <p class="top__slide-txt">
                                 <?= $item['PREVIEW_TEXT']?>
                             </p>
@@ -41,4 +41,18 @@ $this->setFrameMode(true);
             ?>
         </div>
     </div>
+
+</div>
+
+<div class="slider__nav">
+              <span class="slider__arrow slider__arrow_prev js-prev" role="button">
+                <svg id="q" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28 17L20 25.5L28 34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+              </span>
+    <span class="slider__arrow slider__arrow_next js-next" role="button">
+               <svg id="q" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 17L30 25.5L22 34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+    </span>
 </div>
