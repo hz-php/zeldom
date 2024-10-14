@@ -15,70 +15,136 @@ $this->setFrameMode(true);
 ?>
 <div class="benefits" id="benefits">
     <ul class="benefits__nav">
-        <?php
-            foreach ($arResult['ITEMS'] as $key => $item) {
-            ?>
-            <li data-aos="fade-right" data-aos-delay="200">
-                <a class="benefits__tab js-tab <?= $key === 0 ? 'active' : '' ?>" href="#tab-benefits-<?= $key + 1 ?>">
-                    <i>
-                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="<?= CFile::GetPath($item['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
-                        </svg>
-                    </i>
-                    <?= $item['NAME'] ?>
-                </a></li>
-            <?php
-        }
-        ?>
+
+        <li data-aos="fade-right" data-aos-delay="200">
+            <a class="benefits__tab js-tab active" href="#tab-benefits-1">
+                <i>
+                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="<?= CFile::GetPath($arResult['ITEMS'][0]['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
+                    </svg>
+                </i>
+                <?= $arResult['ITEMS'][0]['NAME'] ?>
+            </a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="250">
+            <a class="benefits__tab js-tab " href="#tab-benefits-2">
+                <i>
+                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="<?= CFile::GetPath($arResult['ITEMS'][1]['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
+                    </svg>
+                </i>
+                <?= $arResult['ITEMS'][1]['NAME'] ?>
+            </a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="300">
+            <a class="benefits__tab js-tab " href="#tab-benefits-3">
+                <i>
+                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="<?= CFile::GetPath($arResult['ITEMS'][2]['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
+                    </svg>
+                </i>
+                <?= $arResult['ITEMS'][2]['NAME'] ?>
+            </a>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="350">
+            <a class="benefits__tab js-tab " href="#tab-benefits-3">
+                <i>
+                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="<?= CFile::GetPath($arResult['ITEMS'][3]['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
+                    </svg>
+                </i>
+                <?= $arResult['ITEMS'][3]['NAME'] ?>
+            </a>
+        </li>
     </ul>
     <div class="benefits__slider">
         <div class="swiper js-slider">
             <div class="swiper-wrapper">
-                <?php
-                foreach ($arResult['ITEMS'] as $key => $itemText) {
-                ?>
-                <div class="swiper-slide" >
+                <div class="swiper-slide">
                     <div class="benefits__slide">
                         <div class="benefits__pic" data-aos="fade" data-aos-delay="100">
-                            <img width="629" src="<?= $itemText['PREVIEW_PICTURE']['SRC'] ?>" height="447" alt="">
+                            <img width="629" src="<?= $arResult['ITEMS'][0]['PREVIEW_PICTURE']['SRC'] ?>" height="447" alt="">
                         </div>
                         <div class="benefits__desc" data-aos="fade-left" data-aos-delay="450">
                             <div class="benefits__head">
                                 <i class="benefits__icon">
                                     <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="<?= CFile::GetPath($itemText['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
+                                        <use xlink:href="<?= CFile::GetPath($arResult['ITEMS'][0]['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
                                     </svg>
 
-                                </i><span class="benefits__title"><?= $itemText['NAME']?></span></div>
+                                </i><span class="benefits__title"><?= $arResult['ITEMS'][0]['NAME'] ?></span></div>
                             <div class="benefits__txt">
                                 <?php
-                                 echo $itemText['PREVIEW_TEXT'];
+                                    echo $arResult['ITEMS'][0]['PREVIEW_TEXT'];
                                 ?>
                             </div>
                         </div>
                     </div>
                 </div>
-                    <?php
-                }
-                ?>
+                <div class="swiper-slide">
+                    <div class="benefits__slide">
+                        <div class="benefits__pic" data-aos="fade" data-aos-delay="100">
+                            <img width="629" src="<?= $arResult['ITEMS'][1]['PREVIEW_PICTURE']['SRC'] ?>" height="447" alt="">
+                        </div>
+                        <div class="benefits__desc" data-aos="fade-left" data-aos-delay="450">
+                            <div class="benefits__head">
+                                <i class="benefits__icon">
+                                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="<?= CFile::GetPath($arResult['ITEMS'][1]['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
+                                    </svg>
+
+                                </i><span class="benefits__title"><?= $arResult['ITEMS'][1]['NAME'] ?></span></div>
+                            <div class="benefits__txt">
+                                <?php
+                                echo $arResult['ITEMS'][1]['PREVIEW_TEXT'];
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="benefits__slide">
+                        <div class="benefits__pic" data-aos="fade" data-aos-delay="100">
+                            <img width="629" src="<?= $arResult['ITEMS'][2]['PREVIEW_PICTURE']['SRC'] ?>" height="447" alt="">
+                        </div>
+                        <div class="benefits__desc" data-aos="fade-left" data-aos-delay="450">
+                            <div class="benefits__head">
+                                <i class="benefits__icon">
+                                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="<?= CFile::GetPath($arResult['ITEMS'][2]['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
+                                    </svg>
+
+                                </i><span class="benefits__title"><?= $arResult['ITEMS'][2]['NAME'] ?></span></div>
+                            <div class="benefits__txt">
+                                <?php
+                                echo $arResult['ITEMS'][2]['PREVIEW_TEXT'];
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="benefits__slide">
+                        <div class="benefits__pic" data-aos="fade" data-aos-delay="100">
+                            <img width="629" src="<?= $arResult['ITEMS'][3]['PREVIEW_PICTURE']['SRC'] ?>" height="447" alt="">
+                        </div>
+                        <div class="benefits__desc" data-aos="fade-left" data-aos-delay="450">
+                            <div class="benefits__head">
+                                <i class="benefits__icon">
+                                    <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="<?= CFile::GetPath($arResult['ITEMS'][3]['PROPERTIES']['ICON']['VALUE']) ?>#q"></use>
+                                    </svg>
+
+                                </i><span class="benefits__title"><?= $arResult['ITEMS'][3]['NAME'] ?></span></div>
+                            <div class="benefits__txt">
+                                <?php
+                                echo $arResult['ITEMS'][3]['PREVIEW_TEXT'];
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const tabs = document.querySelectorAll('.benefits__tab');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                // Убираем класс active у всех ссылок
-                tabs.forEach(t => t.classList.remove('active'));
-
-                // Добавляем класс active к текущей ссылке
-                this.classList.add('active');
-            });
-        });
-    });
-</script>

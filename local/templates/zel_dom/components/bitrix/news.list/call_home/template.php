@@ -37,11 +37,11 @@ $this->setFrameMode(true);
                     "DETAIL_URL" => "",
                     "PREVIEW_TRUNCATE_LEN" => "",
                     "ACTIVE_DATE_FORMAT" => "d.m.Y",
-                    "SET_TITLE" => "Y",
-                    "SET_BROWSER_TITLE" => "Y",
-                    "SET_META_KEYWORDS" => "Y",
-                    "SET_META_DESCRIPTION" => "Y",
-                    "SET_LAST_MODIFIED" => "Y",
+                    "SET_TITLE" => "N",
+                    "SET_BROWSER_TITLE" => "N",
+                    "SET_META_KEYWORDS" => "N",
+                    "SET_META_DESCRIPTION" => "N",
+                    "SET_LAST_MODIFIED" => "N",
                     "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
                     "ADD_SECTIONS_CHAIN" => "Y",
                     "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
@@ -71,19 +71,20 @@ $this->setFrameMode(true);
             <i>
                 <img src="<?= SITE_TEMPLATE_PATH ?>/img/call/icon-1-1.svg" width="48" height="48" alt="">
             </i>
-            <div>консультации с нашим менеджером по телефону</div>
+
+            <div><?= $arResult['ITEMS'][0]['PROPERTIES']['TEXT_FIELD']['VALUE'][0]?></div>
         </li>
         <li data-aos="fade-right" data-aos-delay="100">
             <i>
                 <img src="<?= SITE_TEMPLATE_PATH ?>/img/call/icon-1-2.svg" width="48" height="48" alt="">
             </i>
-            <div>оформление и сопровождение заказов</div>
+            <div><?= $arResult['ITEMS'][0]['PROPERTIES']['TEXT_FIELD']['VALUE'][1]?></div>
         </li>
         <li data-aos="fade-right" data-aos-delay="200">
             <i>
                 <img src="<?= SITE_TEMPLATE_PATH ?>/img/call/icon-1-3.svg" width="48" height="48" alt="">
             </i>
-            <div>профессиональный расчет нормы расхода любого товара</div>
+            <div><?= $arResult['ITEMS'][0]['PROPERTIES']['TEXT_FIELD']['VALUE'][2]?></div>
         </li>
     </ul>
 

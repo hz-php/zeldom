@@ -76,7 +76,7 @@
                 <form class="search js-search" action="#" method="get">
                     <button class="search__submit" type="submit">
                         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/svg/zoom.svg#q" aria-hidden="true"></use>
+                            <use xlink:href="<?= SITE_TEMPLATE_PATH ?>/img/svg/zoom.svg" aria-hidden="true"></use>
                         </svg></button>
                     <input class="search__input js-search-input" type="text" name="search" placeholder="Поиск товаров по сайту" required>
                     <div class="search__wrap js-search-result"><span class="search__empty">Ничего не найдено. Попробуйте поменять запрос.</span></div>
