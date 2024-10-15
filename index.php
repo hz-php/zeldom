@@ -700,83 +700,63 @@ $APPLICATION->SetTitle("Интернет-магазин товаров для п
     <section class="section section_info" id="s-info">
         <div class="container">
             <h2 class="section__title" data-aos="fade-right" data-aos-delay="0"><strong>Узнайте больше</strong> об <br>интернет-магазине «Земледел»</h2>
-            <div class="info" id="info">
-                <div class="info__slider">
-                    <div class="swiper js-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><a class="info__slide" href="garanties.html" data-aos="fade-up" data-aos-delay="0">
-                                    <div class="info__pic">
-                                        <img width="64" src="/local/templates/zel_dom/img/info/1.svg" height="64" class="lazy" data-src="/local/templates/zel_dom/img/info/1.svg" alt=""></div>
-                                    <span class="info__title">Гарантия</span>
-                                    <div class="info__bottom">
-                                        <span class="info__txt">сертифицированные товары, доставка в срок по договору, безопасная оплата покупок</span>
-                                        <span class="link-diag">
-                                        <svg id="q" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.9251 18.2423L30.1672 18.2699L30.276 29.1556L18.2972 17.414L16.3676 19.3826L28.3465 31.1241L17.4608 31.233L17.4884 33.991L33.0811 33.835L32.9251 18.2423Z"/>
-                                        </svg>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide"><a class="info__slide" href="buy.html" data-aos="fade-up" data-aos-delay="50">
-                                    <div class="info__pic">
-                                        <img width="64" src="/local/templates/zel_dom/img/info/2.svg" height="64" class="lazy" data-src="/local/templates/zel_dom/img/info/2.svg" alt=""></div>
-                                    <span class="info__title">Как купить</span>
-                                    <div class="info__bottom"><span class="info__txt">пошаговая инструкция, как оформить заказ в интернет-магазине «Земледел»</span>
-                                        <span class="link-diag">
-                                        <svg id="q" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.9251 18.2423L30.1672 18.2699L30.276 29.1556L18.2972 17.414L16.3676 19.3826L28.3465 31.1241L17.4608 31.233L17.4884 33.991L33.0811 33.835L32.9251 18.2423Z"/>
-                                        </svg>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="info__slide" href="delivery.html" data-aos="fade-up" data-aos-delay="100">
-                                    <div class="info__pic">
-                                        <img width="64" src="/local/templates/zel_dom/img/info/3.svg" height="64" class="lazy" data-src="/local/templates/zel_dom/img/info/3.svg" alt=""></div>
-                                    <span class="info__title">Доставка</span>
-                                    <div class="info__bottom"><span class="info__txt">получите расчет сроков и стоимости доставки в любой город Казахстана</span>
-                                        <span class="link-diag">
-                                        <svg id="q" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.9251 18.2423L30.1672 18.2699L30.276 29.1556L18.2972 17.414L16.3676 19.3826L28.3465 31.1241L17.4608 31.233L17.4884 33.991L33.0811 33.835L32.9251 18.2423Z"/>
-                                        </svg>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a class="info__slide" href="payments.html" data-aos="fade-up" data-aos-delay="150">
-                                    <div class="info__pic">
-                                        <img width="64" src="/local/templates/zel_dom/img/info/4.svg" height="64" class="lazy" data-src="/local/templates/zel_dom/img/info/4.svg" alt=""></div>
-                                    <span class="info__title">Оплата</span>
-                                    <div class="info__bottom">
-                                        <span class="info__txt">5 способов оплаты заказа в&nbsp;интернет-магазине «Земледел»</span>
-                                        <span class="link-diag">
-                                        <svg id="q" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M32.9251 18.2423L30.1672 18.2699L30.276 29.1556L18.2972 17.414L16.3676 19.3826L28.3465 31.1241L17.4608 31.233L17.4884 33.991L33.0811 33.835L32.9251 18.2423Z"/>
-                                        </svg>
-                                        </span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider__nav js-nav">
-                        <div class="slider__nav js-nav"><span class="slider__arrow slider__arrow_prev js-prev" role="button">
-                                <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="img/svg/arrow-prev.svg#q"></use>
-                                </svg>
-                            </span>
-                            <span class="slider__arrow slider__arrow_next js-next" role="button">
-                                <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="img/svg/arrow-next.svg#q"></use>
-                                </svg>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $APPLICATION->IncludeComponent("bitrix:news.list","section_block",Array(
+                    "DISPLAY_DATE" => "Y",
+                    "DISPLAY_NAME" => "Y",
+                    "DISPLAY_PICTURE" => "Y",
+                    "DISPLAY_PREVIEW_TEXT" => "Y",
+                    "AJAX_MODE" => "Y",
+                    "IBLOCK_TYPE" => "news",
+                    "IBLOCK_ID" => "15",
+                    "NEWS_COUNT" => "20",
+                    "SORT_BY1" => "ACTIVE_FROM",
+                    "SORT_ORDER1" => "DESC",
+                    "SORT_BY2" => "SORT",
+                    "SORT_ORDER2" => "ASC",
+                    "FILTER_NAME" => "",
+                    "FIELD_CODE" => Array("ID"),
+                    "PROPERTY_CODE" => Array("DESCRIPTION"),
+                    "CHECK_DATES" => "Y",
+                    "DETAIL_URL" => "",
+                    "PREVIEW_TRUNCATE_LEN" => "",
+                    "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                    "SET_TITLE" => "Y",
+                    "SET_BROWSER_TITLE" => "Y",
+                    "SET_META_KEYWORDS" => "Y",
+                    "SET_META_DESCRIPTION" => "Y",
+                    "SET_LAST_MODIFIED" => "Y",
+                    "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+                    "ADD_SECTIONS_CHAIN" => "Y",
+                    "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
+                    "PARENT_SECTION" => "",
+                    "PARENT_SECTION_CODE" => "",
+                    "INCLUDE_SUBSECTIONS" => "Y",
+                    "CACHE_TYPE" => "A",
+                    "CACHE_TIME" => "3600",
+                    "CACHE_FILTER" => "Y",
+                    "CACHE_GROUPS" => "Y",
+                    "DISPLAY_TOP_PAGER" => "Y",
+                    "DISPLAY_BOTTOM_PAGER" => "Y",
+                    "PAGER_TITLE" => "Новости",
+                    "PAGER_SHOW_ALWAYS" => "Y",
+                    "PAGER_TEMPLATE" => "",
+                    "PAGER_DESC_NUMBERING" => "Y",
+                    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                    "PAGER_SHOW_ALL" => "Y",
+                    "PAGER_BASE_LINK_ENABLE" => "Y",
+                    "SET_STATUS_404" => "Y",
+                    "SHOW_404" => "Y",
+                    "MESSAGE_404" => "",
+                    "PAGER_BASE_LINK" => "",
+                    "PAGER_PARAMS_NAME" => "arrPager",
+                    "AJAX_OPTION_JUMP" => "N",
+                    "AJAX_OPTION_STYLE" => "Y",
+                    "AJAX_OPTION_HISTORY" => "N",
+                    "AJAX_OPTION_ADDITIONAL" => ""
+                )
+            );?>
+
         </div>
     </section>
     <!--  /INFO  -->

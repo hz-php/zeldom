@@ -1,0 +1,423 @@
+Array
+(
+    [0] => Array
+        (
+            [ID] => 355
+            [~ID] => 355
+            [IBLOCK_ID] => 15
+            [~IBLOCK_ID] => 15
+            [IBLOCK_SECTION_ID] => 
+            [~IBLOCK_SECTION_ID] => 
+            [NAME] => Оплата
+            [~NAME] => Оплата
+            [ACTIVE_FROM_X] => 
+            [~ACTIVE_FROM_X] => 
+            [ACTIVE_FROM] => 
+            [~ACTIVE_FROM] => 
+            [TIMESTAMP_X] => 14.10.2024 21:04:40
+            [~TIMESTAMP_X] => 14.10.2024 21:04:40
+            [DETAIL_PAGE_URL] => /content_home/detail.php?ID=355
+            [~DETAIL_PAGE_URL] => /content_home/detail.php?ID=355
+            [LIST_PAGE_URL] => /content_home/index.php?ID=15
+            [~LIST_PAGE_URL] => /content_home/index.php?ID=15
+            [DETAIL_TEXT] => 
+            [~DETAIL_TEXT] => 
+            [DETAIL_TEXT_TYPE] => text
+            [~DETAIL_TEXT_TYPE] => text
+            [PREVIEW_TEXT] => 5 способов оплаты заказа в интернет-магазине «Земледел»
+            [~PREVIEW_TEXT] => 5 способов оплаты заказа в интернет-магазине «Земледел»
+            [PREVIEW_TEXT_TYPE] => text
+            [~PREVIEW_TEXT_TYPE] => text
+            [PREVIEW_PICTURE] => 
+            [~PREVIEW_PICTURE] => 
+            [LANG_DIR] => /
+            [~LANG_DIR] => /
+            [CODE] => payments
+            [~CODE] => payments
+            [EXTERNAL_ID] => 355
+            [~EXTERNAL_ID] => 355
+            [IBLOCK_TYPE_ID] => content_home
+            [~IBLOCK_TYPE_ID] => content_home
+            [IBLOCK_CODE] => 
+            [~IBLOCK_CODE] => 
+            [IBLOCK_EXTERNAL_ID] => 
+            [~IBLOCK_EXTERNAL_ID] => 
+            [LID] => s1
+            [~LID] => s1
+            [EDIT_LINK] => /bitrix/admin/iblock_element_edit.php?IBLOCK_ID=15&type=content_home&ID=355&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F
+            [DELETE_LINK] => /bitrix/admin/iblock_list_admin.php?IBLOCK_ID=15&type=content_home&lang=ru&action=delete&ID=E355&return_url=%2F
+            [DISPLAY_ACTIVE_FROM] => 
+            [FIELDS] => Array
+                (
+                    [ID] => 355
+                )
+
+            [PROPERTIES] => Array
+                (
+                    [ICON] => Array
+                        (
+                            [ID] => 42
+                            [IBLOCK_ID] => 15
+                            [NAME] => Иконка
+                            [ACTIVE] => Y
+                            [SORT] => 500
+                            [CODE] => ICON
+                            [DEFAULT_VALUE] => 
+                            [PROPERTY_TYPE] => F
+                            [ROW_COUNT] => 1
+                            [COL_COUNT] => 30
+                            [LIST_TYPE] => L
+                            [MULTIPLE] => N
+                            [XML_ID] => 
+                            [FILE_TYPE] => 
+                            [MULTIPLE_CNT] => 5
+                            [LINK_IBLOCK_ID] => 0
+                            [WITH_DESCRIPTION] => N
+                            [SEARCHABLE] => N
+                            [FILTRABLE] => N
+                            [IS_REQUIRED] => N
+                            [VERSION] => 1
+                            [USER_TYPE] => 
+                            [USER_TYPE_SETTINGS] => 
+                            [HINT] => 
+                            [~NAME] => Иконка
+                            [~DEFAULT_VALUE] => 
+                            [VALUE_ENUM] => 
+                            [VALUE_XML_ID] => 
+                            [VALUE_SORT] => 
+                            [VALUE] => 1001
+                            [PROPERTY_VALUE_ID] => 2106
+                            [DESCRIPTION] => 
+                            [~VALUE] => 1001
+                            [~DESCRIPTION] => 
+                        )
+
+                    [DESCRIPTION] => 
+                )
+
+            [DISPLAY_PROPERTIES] => Array
+                (
+                )
+
+            [IPROPERTY_VALUES] => Array
+                (
+                )
+
+        )
+
+    [1] => Array
+        (
+            [ID] => 354
+            [~ID] => 354
+            [IBLOCK_ID] => 15
+            [~IBLOCK_ID] => 15
+            [IBLOCK_SECTION_ID] => 
+            [~IBLOCK_SECTION_ID] => 
+            [NAME] => Доставка
+            [~NAME] => Доставка
+            [ACTIVE_FROM_X] => 
+            [~ACTIVE_FROM_X] => 
+            [ACTIVE_FROM] => 
+            [~ACTIVE_FROM] => 
+            [TIMESTAMP_X] => 14.10.2024 21:03:02
+            [~TIMESTAMP_X] => 14.10.2024 21:03:02
+            [DETAIL_PAGE_URL] => /content_home/detail.php?ID=354
+            [~DETAIL_PAGE_URL] => /content_home/detail.php?ID=354
+            [LIST_PAGE_URL] => /content_home/index.php?ID=15
+            [~LIST_PAGE_URL] => /content_home/index.php?ID=15
+            [DETAIL_TEXT] => 
+            [~DETAIL_TEXT] => 
+            [DETAIL_TEXT_TYPE] => text
+            [~DETAIL_TEXT_TYPE] => text
+            [PREVIEW_TEXT] => получите расчет сроков и стоимости доставки в любой город Казахстана
+            [~PREVIEW_TEXT] => получите расчет сроков и стоимости доставки в любой город Казахстана
+            [PREVIEW_TEXT_TYPE] => text
+            [~PREVIEW_TEXT_TYPE] => text
+            [PREVIEW_PICTURE] => 
+            [~PREVIEW_PICTURE] => 
+            [LANG_DIR] => /
+            [~LANG_DIR] => /
+            [CODE] => delivery
+            [~CODE] => delivery
+            [EXTERNAL_ID] => 354
+            [~EXTERNAL_ID] => 354
+            [IBLOCK_TYPE_ID] => content_home
+            [~IBLOCK_TYPE_ID] => content_home
+            [IBLOCK_CODE] => 
+            [~IBLOCK_CODE] => 
+            [IBLOCK_EXTERNAL_ID] => 
+            [~IBLOCK_EXTERNAL_ID] => 
+            [LID] => s1
+            [~LID] => s1
+            [EDIT_LINK] => /bitrix/admin/iblock_element_edit.php?IBLOCK_ID=15&type=content_home&ID=354&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F
+            [DELETE_LINK] => /bitrix/admin/iblock_list_admin.php?IBLOCK_ID=15&type=content_home&lang=ru&action=delete&ID=E354&return_url=%2F
+            [DISPLAY_ACTIVE_FROM] => 
+            [FIELDS] => Array
+                (
+                    [ID] => 354
+                )
+
+            [PROPERTIES] => Array
+                (
+                    [ICON] => Array
+                        (
+                            [ID] => 42
+                            [IBLOCK_ID] => 15
+                            [NAME] => Иконка
+                            [ACTIVE] => Y
+                            [SORT] => 500
+                            [CODE] => ICON
+                            [DEFAULT_VALUE] => 
+                            [PROPERTY_TYPE] => F
+                            [ROW_COUNT] => 1
+                            [COL_COUNT] => 30
+                            [LIST_TYPE] => L
+                            [MULTIPLE] => N
+                            [XML_ID] => 
+                            [FILE_TYPE] => 
+                            [MULTIPLE_CNT] => 5
+                            [LINK_IBLOCK_ID] => 0
+                            [WITH_DESCRIPTION] => N
+                            [SEARCHABLE] => N
+                            [FILTRABLE] => N
+                            [IS_REQUIRED] => N
+                            [VERSION] => 1
+                            [USER_TYPE] => 
+                            [USER_TYPE_SETTINGS] => 
+                            [HINT] => 
+                            [~NAME] => Иконка
+                            [~DEFAULT_VALUE] => 
+                            [VALUE_ENUM] => 
+                            [VALUE_XML_ID] => 
+                            [VALUE_SORT] => 
+                            [VALUE] => 1000
+                            [PROPERTY_VALUE_ID] => 2105
+                            [DESCRIPTION] => 
+                            [~VALUE] => 1000
+                            [~DESCRIPTION] => 
+                        )
+
+                    [DESCRIPTION] => 
+                )
+
+            [DISPLAY_PROPERTIES] => Array
+                (
+                )
+
+            [IPROPERTY_VALUES] => Array
+                (
+                )
+
+        )
+
+    [2] => Array
+        (
+            [ID] => 353
+            [~ID] => 353
+            [IBLOCK_ID] => 15
+            [~IBLOCK_ID] => 15
+            [IBLOCK_SECTION_ID] => 
+            [~IBLOCK_SECTION_ID] => 
+            [NAME] => Как купить
+            [~NAME] => Как купить
+            [ACTIVE_FROM_X] => 
+            [~ACTIVE_FROM_X] => 
+            [ACTIVE_FROM] => 
+            [~ACTIVE_FROM] => 
+            [TIMESTAMP_X] => 14.10.2024 21:02:33
+            [~TIMESTAMP_X] => 14.10.2024 21:02:33
+            [DETAIL_PAGE_URL] => /content_home/detail.php?ID=353
+            [~DETAIL_PAGE_URL] => /content_home/detail.php?ID=353
+            [LIST_PAGE_URL] => /content_home/index.php?ID=15
+            [~LIST_PAGE_URL] => /content_home/index.php?ID=15
+            [DETAIL_TEXT] => 
+            [~DETAIL_TEXT] => 
+            [DETAIL_TEXT_TYPE] => text
+            [~DETAIL_TEXT_TYPE] => text
+            [PREVIEW_TEXT] => пошаговая инструкция, как оформить заказ в интернет-магазине «Земледел»
+            [~PREVIEW_TEXT] => пошаговая инструкция, как оформить заказ в интернет-магазине «Земледел»
+            [PREVIEW_TEXT_TYPE] => text
+            [~PREVIEW_TEXT_TYPE] => text
+            [PREVIEW_PICTURE] => 
+            [~PREVIEW_PICTURE] => 
+            [LANG_DIR] => /
+            [~LANG_DIR] => /
+            [CODE] => buy
+            [~CODE] => buy
+            [EXTERNAL_ID] => 353
+            [~EXTERNAL_ID] => 353
+            [IBLOCK_TYPE_ID] => content_home
+            [~IBLOCK_TYPE_ID] => content_home
+            [IBLOCK_CODE] => 
+            [~IBLOCK_CODE] => 
+            [IBLOCK_EXTERNAL_ID] => 
+            [~IBLOCK_EXTERNAL_ID] => 
+            [LID] => s1
+            [~LID] => s1
+            [EDIT_LINK] => /bitrix/admin/iblock_element_edit.php?IBLOCK_ID=15&type=content_home&ID=353&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F
+            [DELETE_LINK] => /bitrix/admin/iblock_list_admin.php?IBLOCK_ID=15&type=content_home&lang=ru&action=delete&ID=E353&return_url=%2F
+            [DISPLAY_ACTIVE_FROM] => 
+            [FIELDS] => Array
+                (
+                    [ID] => 353
+                )
+
+            [PROPERTIES] => Array
+                (
+                    [ICON] => Array
+                        (
+                            [ID] => 42
+                            [IBLOCK_ID] => 15
+                            [NAME] => Иконка
+                            [ACTIVE] => Y
+                            [SORT] => 500
+                            [CODE] => ICON
+                            [DEFAULT_VALUE] => 
+                            [PROPERTY_TYPE] => F
+                            [ROW_COUNT] => 1
+                            [COL_COUNT] => 30
+                            [LIST_TYPE] => L
+                            [MULTIPLE] => N
+                            [XML_ID] => 
+                            [FILE_TYPE] => 
+                            [MULTIPLE_CNT] => 5
+                            [LINK_IBLOCK_ID] => 0
+                            [WITH_DESCRIPTION] => N
+                            [SEARCHABLE] => N
+                            [FILTRABLE] => N
+                            [IS_REQUIRED] => N
+                            [VERSION] => 1
+                            [USER_TYPE] => 
+                            [USER_TYPE_SETTINGS] => 
+                            [HINT] => 
+                            [~NAME] => Иконка
+                            [~DEFAULT_VALUE] => 
+                            [VALUE_ENUM] => 
+                            [VALUE_XML_ID] => 
+                            [VALUE_SORT] => 
+                            [VALUE] => 999
+                            [PROPERTY_VALUE_ID] => 2104
+                            [DESCRIPTION] => 
+                            [~VALUE] => 999
+                            [~DESCRIPTION] => 
+                        )
+
+                    [DESCRIPTION] => 
+                )
+
+            [DISPLAY_PROPERTIES] => Array
+                (
+                )
+
+            [IPROPERTY_VALUES] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [ID] => 352
+            [~ID] => 352
+            [IBLOCK_ID] => 15
+            [~IBLOCK_ID] => 15
+            [IBLOCK_SECTION_ID] => 
+            [~IBLOCK_SECTION_ID] => 
+            [NAME] => Гарантия
+            [~NAME] => Гарантия
+            [ACTIVE_FROM_X] => 
+            [~ACTIVE_FROM_X] => 
+            [ACTIVE_FROM] => 
+            [~ACTIVE_FROM] => 
+            [TIMESTAMP_X] => 14.10.2024 21:01:42
+            [~TIMESTAMP_X] => 14.10.2024 21:01:42
+            [DETAIL_PAGE_URL] => /content_home/detail.php?ID=352
+            [~DETAIL_PAGE_URL] => /content_home/detail.php?ID=352
+            [LIST_PAGE_URL] => /content_home/index.php?ID=15
+            [~LIST_PAGE_URL] => /content_home/index.php?ID=15
+            [DETAIL_TEXT] => 
+            [~DETAIL_TEXT] => 
+            [DETAIL_TEXT_TYPE] => text
+            [~DETAIL_TEXT_TYPE] => text
+            [PREVIEW_TEXT] => сертифицированные товары, доставка в срок по договору, безопасная оплата покупок
+            [~PREVIEW_TEXT] => сертифицированные товары, доставка в срок по договору, безопасная оплата покупок
+            [PREVIEW_TEXT_TYPE] => text
+            [~PREVIEW_TEXT_TYPE] => text
+            [PREVIEW_PICTURE] => 
+            [~PREVIEW_PICTURE] => 
+            [LANG_DIR] => /
+            [~LANG_DIR] => /
+            [CODE] => garanties
+            [~CODE] => garanties
+            [EXTERNAL_ID] => 352
+            [~EXTERNAL_ID] => 352
+            [IBLOCK_TYPE_ID] => content_home
+            [~IBLOCK_TYPE_ID] => content_home
+            [IBLOCK_CODE] => 
+            [~IBLOCK_CODE] => 
+            [IBLOCK_EXTERNAL_ID] => 
+            [~IBLOCK_EXTERNAL_ID] => 
+            [LID] => s1
+            [~LID] => s1
+            [EDIT_LINK] => /bitrix/admin/iblock_element_edit.php?IBLOCK_ID=15&type=content_home&ID=352&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2F
+            [DELETE_LINK] => /bitrix/admin/iblock_list_admin.php?IBLOCK_ID=15&type=content_home&lang=ru&action=delete&ID=E352&return_url=%2F
+            [DISPLAY_ACTIVE_FROM] => 
+            [FIELDS] => Array
+                (
+                    [ID] => 352
+                )
+
+            [PROPERTIES] => Array
+                (
+                    [ICON] => Array
+                        (
+                            [ID] => 42
+                            [IBLOCK_ID] => 15
+                            [NAME] => Иконка
+                            [ACTIVE] => Y
+                            [SORT] => 500
+                            [CODE] => ICON
+                            [DEFAULT_VALUE] => 
+                            [PROPERTY_TYPE] => F
+                            [ROW_COUNT] => 1
+                            [COL_COUNT] => 30
+                            [LIST_TYPE] => L
+                            [MULTIPLE] => N
+                            [XML_ID] => 
+                            [FILE_TYPE] => 
+                            [MULTIPLE_CNT] => 5
+                            [LINK_IBLOCK_ID] => 0
+                            [WITH_DESCRIPTION] => N
+                            [SEARCHABLE] => N
+                            [FILTRABLE] => N
+                            [IS_REQUIRED] => N
+                            [VERSION] => 1
+                            [USER_TYPE] => 
+                            [USER_TYPE_SETTINGS] => 
+                            [HINT] => 
+                            [~NAME] => Иконка
+                            [~DEFAULT_VALUE] => 
+                            [VALUE_ENUM] => 
+                            [VALUE_XML_ID] => 
+                            [VALUE_SORT] => 
+                            [VALUE] => 998
+                            [PROPERTY_VALUE_ID] => 2103
+                            [DESCRIPTION] => 
+                            [~VALUE] => 998
+                            [~DESCRIPTION] => 
+                        )
+
+                    [DESCRIPTION] => 
+                )
+
+            [DISPLAY_PROPERTIES] => Array
+                (
+                )
+
+            [IPROPERTY_VALUES] => Array
+                (
+                )
+
+        )
+
+)
