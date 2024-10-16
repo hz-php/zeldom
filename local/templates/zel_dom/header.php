@@ -34,6 +34,7 @@ $curPage = $APPLICATION->GetCurPage(true);
             //- var url_api = 'http://localhost/zemledel/site/build/api/';
         </script>
         <? $APPLICATION->ShowPanel() ?>
+
     </head>
 <body class="page-home">
 <div class="main">

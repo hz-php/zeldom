@@ -112,7 +112,8 @@ $APPLICATION->SetTitle("Интернет-магазин товаров для п
         ); ?>
     </div>
 
-    </div>
+    </section>
+
     <!--  BENEFITS  -->
     <section class="section section_benefits" id="s-benefits">
         <div class="container">
@@ -637,7 +638,8 @@ $APPLICATION->SetTitle("Интернет-магазин товаров для п
             <h2 class="section__title" data-aos="fade-right" data-aos-delay="0">
                 Делимся <strong>полезными статьями</strong> по&nbsp;промышленному земледелию
             </h2>
-            <?$APPLICATION->IncludeComponent("bitrix:news.list","articles_home",Array(
+            <?php
+            $APPLICATION->IncludeComponent("bitrix:news.list", "articles_home", array(
                     "DISPLAY_DATE" => "Y",
                     "DISPLAY_NAME" => "Y",
                     "DISPLAY_PICTURE" => "Y",
@@ -651,8 +653,8 @@ $APPLICATION->SetTitle("Интернет-магазин товаров для п
                     "SORT_BY2" => "SORT",
                     "SORT_ORDER2" => "ASC",
                     "FILTER_NAME" => "",
-                    "FIELD_CODE" => Array("ID"),
-                    "PROPERTY_CODE" => Array("DESCRIPTION"),
+                    "FIELD_CODE" => array("ID"),
+                    "PROPERTY_CODE" => array("DESCRIPTION"),
                     "CHECK_DATES" => "Y",
                     "DETAIL_URL" => "",
                     "PREVIEW_TRUNCATE_LEN" => "",
@@ -691,7 +693,7 @@ $APPLICATION->SetTitle("Интернет-магазин товаров для п
                     "AJAX_OPTION_HISTORY" => "N",
                     "AJAX_OPTION_ADDITIONAL" => ""
                 )
-            );?>
+            ); ?>
 
         </div>
     </section>
@@ -701,7 +703,10 @@ $APPLICATION->SetTitle("Интернет-магазин товаров для п
         <div class="container">
             <h2 class="section__title" data-aos="fade-right" data-aos-delay="0"><strong>Узнайте больше</strong> об <br>интернет-магазине «Земледел»</h2>
             <?php
-            $APPLICATION->IncludeComponent("bitrix:news.list","section_block",Array(
+            $APPLICATION->IncludeComponent(
+                "bitrix:news.list",
+                "section_block",
+                array(
                     "DISPLAY_DATE" => "Y",
                     "DISPLAY_NAME" => "Y",
                     "DISPLAY_PICTURE" => "Y",
@@ -715,20 +720,27 @@ $APPLICATION->SetTitle("Интернет-магазин товаров для п
                     "SORT_BY2" => "SORT",
                     "SORT_ORDER2" => "ASC",
                     "FILTER_NAME" => "",
-                    "FIELD_CODE" => Array("ID"),
-                    "PROPERTY_CODE" => Array("DESCRIPTION"),
+                    "FIELD_CODE" => array(
+                        0 => "ID",
+                        1 => "",
+                    ),
+                    "PROPERTY_CODE" => array(
+                        0 => "",
+                        1 => "DESCRIPTION",
+                        2 => "",
+                    ),
                     "CHECK_DATES" => "Y",
                     "DETAIL_URL" => "",
                     "PREVIEW_TRUNCATE_LEN" => "",
                     "ACTIVE_DATE_FORMAT" => "d.m.Y",
-                    "SET_TITLE" => "Y",
-                    "SET_BROWSER_TITLE" => "Y",
-                    "SET_META_KEYWORDS" => "Y",
-                    "SET_META_DESCRIPTION" => "Y",
-                    "SET_LAST_MODIFIED" => "Y",
-                    "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
-                    "ADD_SECTIONS_CHAIN" => "Y",
-                    "HIDE_LINK_WHEN_NO_DETAIL" => "Y",
+                    "SET_TITLE" => "N",
+                    "SET_BROWSER_TITLE" => "N",
+                    "SET_META_KEYWORDS" => "N",
+                    "SET_META_DESCRIPTION" => "N",
+                    "SET_LAST_MODIFIED" => "N",
+                    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                    "ADD_SECTIONS_CHAIN" => "N",
+                    "HIDE_LINK_WHEN_NO_DETAIL" => "N",
                     "PARENT_SECTION" => "",
                     "PARENT_SECTION_CODE" => "",
                     "INCLUDE_SUBSECTIONS" => "Y",
@@ -753,53 +765,93 @@ $APPLICATION->SetTitle("Интернет-магазин товаров для п
                     "AJAX_OPTION_JUMP" => "N",
                     "AJAX_OPTION_STYLE" => "Y",
                     "AJAX_OPTION_HISTORY" => "N",
-                    "AJAX_OPTION_ADDITIONAL" => ""
-                )
-            );?>
+                    "AJAX_OPTION_ADDITIONAL" => "",
+                    "COMPONENT_TEMPLATE" => "section_block",
+                    "STRICT_SECTION_CHECK" => "N",
+                    "FILE_404" => ""
+                ),
+                false
+            ); ?>
 
         </div>
     </section>
     <!--  /INFO  -->
     <section class="call call-3" id="call-3">
         <div class="container">
-            <div class="call__wrap">
-                <div class="call__desc-3">
-                    <h2 class="call__title-2" data-aos="fade-right" data-aos-delay="0">Получите <strong>профессиональную консультацию</strong> нашего менеджера</h2><span class="call__title-3" data-aos="fade-right" data-aos-delay="0">Мы подробно расскажем вам:</span>
-                    <ul class="call__list call__list_v2">
-                        <li data-aos="fade-right" data-aos-delay="0"><i><img width="48" src="/local/templates/zel_dom/img/call/icon-3-1.svg" height="48" alt=""></i>
-                            <div>как улучшить технологию выращивания культур и&nbsp;повысить урожайность в поле или теплице</div>
-                        </li>
-                        <li data-aos="fade-right" data-aos-delay="0"><i><img width="48" src="/local/templates/zel_dom/img/call/icon-3-2.svg" height="48" alt=""></i>
-                            <div>поможем подобрать товары <span class="d-ib">для промышленного земледелия</span></div>
-                        </li>
-                        <li data-aos="fade-right" data-aos-delay="0"><i><img width="48" src="/local/templates/zel_dom/img/call/icon-3-3.svg" height="48" alt=""></i>
-                            <div>рассчитаем для вас норму расхода&nbsp;любого&nbsp;товара</div>
-                        </li>
-                    </ul>
-                    <div class="call__row-btns">
-                        <div class="call__btns" data-aos="fade-right" data-aos-delay="0">
-                            <a class="btn1 call__btn" href="#modal-consult" data-fancybox-modal><span>Получить консультацию</span>
-                                <i class="btn1__arr">
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="q" viewBox="0 0 40 26">
-                                        <path d="M2 11.0533H33.72L26.46 3.0229C26.2919 2.83666 26.1653 2.62175 26.0874 2.39045C26.0095 2.15915 25.9818 1.91598 26.006 1.67483C26.0547 1.1878 26.3116 0.738555 26.72 0.425926C27.1284 0.113297 27.655 -0.0371095 28.1838 0.00779372C28.7127 0.052697 29.2005 0.289232 29.54 0.665363L39.54 11.7163C39.6073 11.8042 39.6674 11.8966 39.72 11.9926C39.72 12.0847 39.82 12.1399 39.86 12.232C39.9507 12.4432 39.9981 12.668 40 12.8951C39.9981 13.1222 39.9507 13.347 39.86 13.5581C39.86 13.6502 39.76 13.7055 39.72 13.7976C39.6674 13.8936 39.6073 13.986 39.54 14.0739L29.54 25.1248C29.352 25.3327 29.1165 25.4999 28.8503 25.6145C28.5841 25.7291 28.2938 25.7883 28 25.7879C27.5327 25.7887 27.0798 25.6388 26.72 25.3643C26.5175 25.2096 26.3501 25.0197 26.2274 24.8055C26.1047 24.5912 26.0291 24.3567 26.0049 24.1154C25.9808 23.8742 26.0085 23.631 26.0866 23.3996C26.1647 23.1683 26.2916 22.9534 26.46 22.7673L33.72 14.7369H2C1.46957 14.7369 0.96086 14.5429 0.585787 14.1975C0.210714 13.8521 0 13.3836 0 12.8951C0 12.4066 0.210714 11.9381 0.585787 11.5927C0.96086 11.2473 1.46957 11.0533 2 11.0533Z"
-                                              fill="white"/>
-                                        <path d="M39.86 13.5572C39.86 13.6493 39.76 13.7045 39.72 13.7966C39.6674 13.8927 39.6073 13.985 39.54 14.0729L29.54 25.1249C29.352 25.3328 29.1165 25.5 28.8503 25.6146C28.5841 25.7292 28.2938 25.7884 28 25.788C27.5327 25.7888 27.0798 25.6389 26.72 25.3643C26.5175 25.2097 26.3501 25.0198 26.2274 24.8055C26.1047 24.5912 26.0291 24.3567 26.0049 24.1154C25.9808 23.8741 26.0085 23.6309 26.0866 23.3995C26.1647 23.1681 26.2916 22.9532 26.46 22.7671L33.72 14.736H2C1.46957 14.736 0.96086 14.542 0.585787 14.1965C0.210714 13.8511 0 13.3826 0 12.894H40C39.9981 13.1211 39.9507 13.346 39.86 13.5572Z"/>
-                                    </svg>
-                                </i></a></div>
-                        <div class="call__socials">
-                            <ul class="socials">
-                                <li data-aos="fade" data-aos-delay="100"><a class="socials__link" href="https://wa.me/77772089955" target="_blank" rel="noopener noreferrer"><img width="57" alt="WhatsApp" src="/local/templates/zel_dom/img/svg/whatsapp-2.svg" height="57"></a></li>
-                                <li data-aos="fade" data-aos-delay="200"><a class="socials__link" href="https://t.me/+77772089955" target="_blank" rel="noopener noreferrer"><img width="57" alt="Telegram" src="/local/templates/zel_dom/img/svg/telegram-2.svg" height="57"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="call__pic-3" data-aos="fade-up" data-aos-delay="0"><img width="798" src="/local/templates/zel_dom/img/call/pic-3-1.png" height="939" class="lazy" data-src="/local/templates/zel_dom/img/call/pic-3-1.png" alt="">
-                    <div class="call__box-3-1"><i><img width="86" src="/local/templates/zel_dom/img/svg/call.svg" height="86" alt=""></i>
-                        <p><strong class="color_green">Закутний Владислав</strong><small>менеджер интернет-магазина «Земледел»</small></p>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $APPLICATION->IncludeComponent(
+                "bitrix:news.detail",
+                "call_manager",
+                array(
+                    "DISPLAY_DATE" => $arParams["DISPLAY_DATE"],
+                    "DISPLAY_NAME" => $arParams["DISPLAY_NAME"],
+                    "DISPLAY_PICTURE" => $arParams["DISPLAY_PICTURE"],
+                    "DISPLAY_PREVIEW_TEXT" => $arParams["DISPLAY_PREVIEW_TEXT"],
+                    "IBLOCK_TYPE" => "content_home",
+                    "IBLOCK_ID" => "16",
+                    "FIELD_CODE" => array(
+                        0 => "",
+                        1 => "",
+                    ),
+                    "PROPERTY_CODE" => array(
+                        0 => "NAME",
+                        1 => "CONTENT",
+                        2 => "MANAGER_NAME",
+                    ),
+                    "DETAIL_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["detail"],
+                    "SECTION_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["section"],
+                    "META_KEYWORDS" => "-",
+                    "META_DESCRIPTION" => "-",
+                    "BROWSER_TITLE" => "-",
+                    "SET_CANONICAL_URL" => "N",
+                    "SET_LAST_MODIFIED" => "N",
+                    "SET_TITLE" => "N",
+                    "MESSAGE_404" => $arParams["MESSAGE_404"],
+                    "SET_STATUS_404" => "N",
+                    "SHOW_404" => "N",
+                    "FILE_404" => $arParams["FILE_404"],
+                    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                    "ADD_SECTIONS_CHAIN" => "N",
+                    "ACTIVE_DATE_FORMAT" => $arParams["DETAIL_ACTIVE_DATE_FORMAT"],
+                    "CACHE_TYPE" => "A",
+                    "CACHE_TIME" => $arParams["CACHE_TIME"],
+                    "CACHE_GROUPS" => "N",
+                    "USE_PERMISSIONS" => "N",
+                    "GROUP_PERMISSIONS" => $arParams["GROUP_PERMISSIONS"],
+                    "DISPLAY_TOP_PAGER" => "N",
+                    "DISPLAY_BOTTOM_PAGER" => "N",
+                    "PAGER_TITLE" => $arParams["DETAIL_PAGER_TITLE"],
+                    "PAGER_SHOW_ALWAYS" => "N",
+                    "PAGER_TEMPLATE" => $arParams["DETAIL_PAGER_TEMPLATE"],
+                    "PAGER_SHOW_ALL" => "N",
+                    "CHECK_DATES" => "N",
+                    "ELEMENT_ID" => "356",
+                    "ELEMENT_CODE" => "",
+                    "SECTION_ID" => $arResult["VARIABLES"]["SECTION_ID"],
+                    "SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],
+                    "IBLOCK_URL" => $arResult["FOLDER"] . $arResult["URL_TEMPLATES"]["news"],
+                    "USE_SHARE" => $arParams["USE_SHARE"],
+                    "SHARE_HIDE" => $arParams["SHARE_HIDE"],
+                    "SHARE_TEMPLATE" => $arParams["SHARE_TEMPLATE"],
+                    "SHARE_HANDLERS" => $arParams["SHARE_HANDLERS"],
+                    "SHARE_SHORTEN_URL_LOGIN" => $arParams["SHARE_SHORTEN_URL_LOGIN"],
+                    "SHARE_SHORTEN_URL_KEY" => $arParams["SHARE_SHORTEN_URL_KEY"],
+                    "ADD_ELEMENT_CHAIN" => "N",
+                    "STRICT_SECTION_CHECK" => "N",
+                    "COMPONENT_TEMPLATE" => "princ",
+                    "AJAX_MODE" => "N",
+                    "AJAX_OPTION_JUMP" => "N",
+                    "AJAX_OPTION_STYLE" => "Y",
+                    "AJAX_OPTION_HISTORY" => "N",
+                    "AJAX_OPTION_ADDITIONAL" => "",
+                    "SET_BROWSER_TITLE" => "N",
+                    "SET_META_KEYWORDS" => "N",
+                    "SET_META_DESCRIPTION" => "N",
+                    "PAGER_BASE_LINK_ENABLE" => "N"
+                ),
+                $component
+            ); ?>
+
         </div>
     </section>
-    <br><?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+ <?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

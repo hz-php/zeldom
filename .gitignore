@@ -53,6 +53,7 @@
 
 _DEBUG_
 _DEBUG.*
+_DEBUG_.txt
 /test.php
 /.htsecure
 /testovaya-stranitsa
