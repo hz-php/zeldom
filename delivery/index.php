@@ -1,48 +1,246 @@
-<?
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Доставка");
 ?>
 
-<p>Интернет-магазин выполняет доставку любого товара своей собственной Службой доставки.</p>
-
-<h2>Стоимость доставки курьером</h2>
-
-<p>Стоимость доставки товара из нашего магазина - 500 руб, при условии выбора при заказе товара в качестве способа доставки нашим курьером.</p>
-
-<h2>Время доставки</h2>
-
-<p>Время доставки согласовывается с менеджером Службы доставки, который обязательно свяжется с вами сразу после того, как вы разместите свой заказ. </p>
-
-<p><b>Внимание!</b> Неправильно указанный номер телефона, неточный или неполный адрес могут привести к дополнительной задержке! Пожалуйста, внимательно проверяйте ваши персональные данные при регистрации и оформлении заказа.Конфиденциальность ваших регистрационных данных гарантируется.</p>
-
-<p>Доставка выполняется ежедневно с 10:00 до 20:00 часов, в субботу с 10:00 до 14:00, в воскресенье доставки нет. Товары, заказанные вами в субботу и воскресенье, доставляются в понедельник. Время осуществления доставки зависит от времени размещения заказа и наличия товара на складе:</p>
-
-		<ul>
-			<li><span style="font-size:13px;">
-					если заказ подтвержден менеджером Службы доставки до 12:00, товар может быть доставлен на следующий рабочий день между 10:00 и 15:00 или между 15:00 и 20:00;
-			</span></li>
-			<li><span style="font-size:13px;">
-					если заказ подтвержден менеджером Службы доставки после 12:00, товар может быть доставлен на следующий рабочий день между 15:00 и 18:00.
-			</span></li>
-		</ul>
-
-
-<p>Вы также можете указать любое другое удобное время доставки, и покупка будет доставлена в удобное вам время. Иное время доставки, а также время доставки в населенные пункты области определяется по договоренности с клиентом.</p>
-
-<h2>Место доставки</h2>
-
-<p>Доставка осуществляется по адресу, указанному при оформлении заказа. Если необходимо доставить товар по иному адресу, необходимо сообщить адрес менеджеру Службы доставки, который свяжется с вами непосредственно после оформления заказа на сайте.</p>
-
-<h2>Правила</h2>
-
-<p>При доставке вам будут переданы все необходимые документы на покупку: товарный, кассовый чеки, а также гарантийный талон.При оформлении покупки на организацию, вам будут переданы счет-фактура, а также накладная, в которой необходимо поставить печать вашей организации.Цена, указанная в переданных вам курьером документах, является окончательной, курьер не обладает правом корректировки цены.Стоимость доставки выделяется в документах на покупку отдельной графой.</p>
-
-<p><b>Внимание!</b> Просим вас помнить, что все технические параметры и потребительские свойства приобретаемого товара вам следует уточнять у нашего менеджера до момента покупки товара. В обязанности работников Службы доставки не входит осуществление консультаций и комментариев относительно потребительских свойств товара. При необходимости инсталляции приобретаемого в нашем магазине товара вам необходимо сообщить об этом нашему менеджеру.При доставке вам заказанного товара проверяйте комплектность доставленного товара, работоспособность товара, соответствие доставленного товара описанию на нашем сайте, также проверьте товар на наличие механических повреждений. При не заявлении вами при получении товара претензий по поводу механических повреждений, в дальнейшем подобные претензии не рассматриваются. В случае вопросов, пожеланий и претензий обращайтесь к нам по следующим координатам:</p>
-
-<p><b>Служба доставки</b>: 8 (495) 212 85 06 (многоканальный).</p>
-
-<p><b>Электронная почта</b>: <a href="mailto:sale@zeldom.loc">sale@zeldom.loc</a></p>
-
-<p><b>Skype</b>: <a href="skype:shipping.example.ru">shipping.example.ru</a></p>
+<!--    <ul class="breadcrumbs" data-aos="fade-right" data-aos-delay="0">-->
+<!--        <li><a href="index.html">Главная</a></li>-->
+<!--        <li><span>Доставка</span></li>-->
+<!--    </ul>-->
+<?php
+$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
+    "START_FROM" => "0",
+    "PATH" => "",
+    "SITE_ID" => "-",
+),
+    false
+);?>
+    <div class="top__wrap-2">
+        <h1 class="top__title-2 top__title-2_v1" data-aos="fade-right" data-aos-delay="50"><strong>Доставка товаров</strong> для промышленного земледелия по всему Казахстану</h1>
+    </div>
+    <div class="delivery" id="delivery">
+        <div class="box-1 delivery__box-1" data-aos="fade-right" data-aos-delay="100"><i><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/icon-0.svg" width="41" height="41" alt=""></i>
+            <p>Получите расчет сроков и стоимости доставки в любой город Казахстана с тарифом на каждую категорию посылок, ценами и сроками доставки</p>
+        </div>
+        <div class="delivery__wrap" data-aos="fade-up" data-aos-delay="200">
+            <div class="delivery__row-1">
+                <div class="delivery__col-1-1">
+                    <label class="form__label">Область</label>
+                    <div class="form__box-select form__box-select_region">
+                        <select class="form__select js-select-delivery-1" name="region">
+                            <option value="2">Акмолинская область</option>
+                            <option value="3">Актюбинская область</option>
+                            <option value="4">Алматинская область</option>
+                            <option value="5">Атырауская область</option>
+                            <option value="6">Восточно-Казахстанская область</option>
+                            <option value="7">Жамбыльская область</option>
+                            <option value="8">Западно-Казахстанская область</option>
+                            <option value="9">Карагандинская область</option>
+                            <option value="10">Костанайская область</option>
+                            <option value="11">Кызылординская область</option>
+                            <option value="12">Мангистауская область</option>
+                            <option value="13">Павлодарская область</option>
+                            <option value="14">Северо-Казахстанская область</option>
+                            <option value="15">Туркестанская область</option>
+                            <option value="16">Абайская область</option>
+                            <option value="17">Жетысуская область</option>
+                            <option value="18">Улытауская область</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="delivery__col-1-1">
+                    <label class="form__label">Город</label>
+                    <div class="form__box-select form__box-select_city">
+                        <select class="form__select js-select-delivery-2" name="city">
+                            <option value="0">Астана</option>
+                            <option value="1">Алматы</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery__block js-delivery-wrapper">
+                <!--Астана-->
+                <div class="delivery__items js-delivery-item" data-id="0">
+                    <div class="delivery__item">
+                        <div class="delivery__col-2-0">
+                            <div class="delivery__logo"><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/logo-1.png" width="150" height="18" alt=""></div><span class="delivery__name">Астана</span>
+                        </div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">до 14 кг:</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>7-10 рабочих дней</p>
+                                    </li>
+                                    <li>
+                                        <p>1200 - 3000 тенге</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Доставка осуществляется до отделения казпочты. Оплата доставки принимается вместе с оплатой за заказ.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">от 14 до 200 кг</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>7-10 рабочих дней</p>
+                                    </li>
+                                    <li>
+                                        <p>Средняя стоимость за 1 кг до 137 тенге</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Доставка осуществляется до отделения казпочты либо до сортировочного центра. Оплата доставки принимается вместе с оплатой за заказ.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery__item">
+                        <div class="delivery__col-2-0">
+                            <div class="delivery__logo"><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/logo-2.png" width="210" height="69" alt=""></div><span class="delivery__name">Астана</span>
+                        </div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">до 5 кг:</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>5-10 рабочих дней</p>
+                                    </li>
+                                    <li>
+                                        <p>3200 тенге</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Доставка осуществляется до склада Транспортной компании: г. Нур-Султан, пр. Аль-Фараби, д. 89, либо до адреса по желанию покупателя (добавляется к стоимости доставки)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">от 5 до 500 кг</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>5-10 рабочих дней</p>
+                                    </li>
+                                    <li>
+                                        <p>Стоимость доставки просчитывается индивидуально</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Доставка осуществляется до склада Транспортной компании: г. Нур-Султан, пр. Аль-Фараби, д. 89, либо до адреса по желанию покупателя (добавляется к стоимости доставки)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery__item">
+                        <div class="delivery__col-2-0">
+                            <div class="delivery__logo"><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/logo-3.png" width="150" height="34" alt=""></div><span class="delivery__name">Астана</span>
+                        </div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">до 10 кг:</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>2 суток</p>
+                                    </li>
+                                    <li>
+                                        <p>2000 - 3000 тенге</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Доставка осуществляется 2 раза в неделю через проводника поезда</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">От 5 до 100 кг</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>2 суток</p>
+                                    </li>
+                                    <li>
+                                        <p>Стоимость доставки просчитывается индивидуально</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Доставка осуществляется 2 раза в неделю через проводника поезда</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery__item">
+                        <div class="delivery__col-2-0"><span class="delivery__name">Астана. Доставка большегрузным транспортом</span></div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">до 10 кг:</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>2 суток</p>
+                                    </li>
+                                    <li>
+                                        <p>1000 - 2000 тенге</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Прибытие на Шанхай</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">От 10 до 1000 кг</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>2 суток</p>
+                                    </li>
+                                    <li>
+                                        <p>Стоимость доставки просчитывается индивидуально</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Прибытие на Шанхай</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery__item">
+                        <div class="delivery__col-2-0"><span class="delivery__name">Астана. Доставка груза автобусом</span></div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">до 10 кг:</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>2 суток</p>
+                                    </li>
+                                    <li>
+                                        <p>2000 - 3000 тенге</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Прибытие на автовокзал Шанхай</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery__col-2-1">
+                            <div class="delivery__box"><span class="delivery__label">От 10 до 300 кг</span>
+                                <ul class="delivery__list">
+                                    <li>
+                                        <p>2 суток</p>
+                                    </li>
+                                    <li>
+                                        <p>Стоимость доставки просчитывается индивидуально</p>
+                                    </li>
+                                </ul>
+                                <div class="delivery__txt">
+                                    <p>Прибытие на автовокзал Шанхай</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery__bottom">
+                <div class="delivery__btns"><a class="btn2 btn2_big" href="#modal-delivery-special" data-fancybox-modal><span>Особенности доставки</span></a></div>
+                <div class="delivery__sub">Стоимость и сроки доставки указаны приблизительно и&nbsp;могут варьироваться в зависимости от грузоперевозчиков, веса, габаритов и адреса доставки</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

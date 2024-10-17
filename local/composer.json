@@ -1,0 +1,14 @@
+{
+    "name": "zeldom/bitrix",
+    "autoload": {
+        "psr-4": {
+            "Zeldom\\Local\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sia"
+        }
+    ],
+    "require": {}
+}
