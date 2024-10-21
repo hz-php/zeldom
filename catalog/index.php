@@ -1,5 +1,5 @@
 <?php
-define("HIDE_SIDEBAR", true);
+
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
@@ -12,8 +12,8 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
 <?php
 $APPLICATION->IncludeComponent(
-	"bitrix:catalog", 
-	"zel_dom_catalog", 
+	"bitrix:catalog",
+	"zel_dom_catalog",
 	array(
 		"IBLOCK_TYPE" => "catalog",
 		"IBLOCK_ID" => "2",

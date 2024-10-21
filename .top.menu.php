@@ -1,13 +1,6 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Каталог", 
-		"catalog/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"О компании", 
 		"about/", 
 		Array(), 

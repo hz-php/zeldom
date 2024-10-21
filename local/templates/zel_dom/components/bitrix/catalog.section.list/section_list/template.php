@@ -59,7 +59,7 @@ function getNounDeclension($count, $singular, $genitiveSingular, $genitivePlural
 
     return $genitivePlural;
 }
-file_put_contents(__DIR__ . '/_DEBUG_', print_r($arResult['SECTIONS'], true));
+
 ?>
 <div class="cat__slider">
     <div class="swiper js-slider">

@@ -71,7 +71,7 @@ $curPage = $APPLICATION->GetCurPage(true);
                 <div class="header__wrap">
                     <div class="header__row-1 display-flex align-center">
                         <div class="header__cat" data-aos="fade-down" data-aos-delay="50">
-                            <a class="cat-link" href="catalog/">
+                            <a class="cat-link" href="/catalog/">
                                 <i>
                                     <svg id="q" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="1" y="1" width="8.17297" height="8.85405" rx="2" stroke-width="1.8" stroke-linejoin="round"/>

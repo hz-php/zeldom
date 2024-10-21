@@ -14,41 +14,43 @@ if(empty($arResult))
 $strReturn = '';
 
 //we can't use $APPLICATION->SetAdditionalCSS() here because we are inside the buffered function GetNavChain()
-$css = $APPLICATION->GetCSSArray();
-if(!is_array($css) || !in_array("/bitrix/css/main/font-awesome.css", $css))
-{
-	$strReturn .= '<link href="'.CUtil::GetAdditionalFileURL("/bitrix/css/main/font-awesome.css").'" type="text/css" rel="stylesheet" />'."\n";
-}
+//$css = $APPLICATION->GetCSSArray();
+//if(!is_array($css) || !in_array("/bitrix/css/main/font-awesome.css", $css))
+//{
+//	$strReturn .= '<link href="'.CUtil::GetAdditionalFileURL("/bitrix/css/main/font-awesome.css").'" type="text/css" rel="stylesheet" />'."\n";
+//}
 
-$strReturn .= '<div class="bx-breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">';
+$strReturn .= '<ul class="breadcrumbs" data-aos="fade-right" data-aos-delay="0">';
 
 $itemSize = count($arResult);
 for($index = 0; $index < $itemSize; $index++)
 {
 	$title = htmlspecialcharsex($arResult[$index]["TITLE"]);
-	$arrow = ($index > 0? '<i class="fa fa-angle-right"></i>' : '');
+	$arrow = ($index > 0? '' : '');
 
 	if($arResult[$index]["LINK"] <> "" && $index != $itemSize-1)
 	{
+        if ($title == 'Главная страница') {
+            $title = 'Главная';
+        }
 		$strReturn .= '
-			<div class="bx-breadcrumb-item" id="bx_breadcrumb_'.$index.'" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			 <li >
 				'.$arrow.'
-				<a href="'.$arResult[$index]["LINK"].'" title="'.$title.'" itemprop="item">
-					<span itemprop="name">'.$title.'</span>
+				<a href="'.$arResult[$index]["LINK"].'" title="'.$title.'" >
+					<span itemprop="name" style="border-bottom: none;">'.$title.'</span>
 				</a>
-				<meta itemprop="position" content="'.($index + 1).'" />
-			</div>';
+			</li>';
 	}
 	else
 	{
 		$strReturn .= '
-			<div class="bx-breadcrumb-item">
+			  <li>
 				'.$arrow.'
 				<span>'.$title.'</span>
-			</div>';
+			</li>';
 	}
 }
 
-$strReturn .= '<div style="clear:both"></div></div>';
+$strReturn .= ' </ul>';
 
 return $strReturn;

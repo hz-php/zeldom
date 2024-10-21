@@ -45,16 +45,12 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 ?>
 
 
-<ul class="breadcrumbs" data-aos="fade-right" data-aos-delay="0">
-    <li><a href="index.html">Главная</a></li>
-    <li><span>Каталог</span></li>
-</ul>
 <div class="top__wrap-2">
     <h1 class="top__title-2 top__title-2_v2" data-aos="fade-right" data-aos-delay="50">
         <strong>Каталог товаров</strong> для промышленного земледелия
     </h1>
     <div class="section__aside" data-aos="fade-left" data-aos-delay="100"><i>
-            <img src="<?= SITE_TEMPLATE_PATH ?>/img/cat/aside.svg" width="80" height="80" alt=""></i>
+            <img src="/local/templates/zel_dom/img/cat/aside.svg" width="80" height="80" alt=""></i>
         <p>всего <br><?= count($arResult['SECTIONS']) ?> категорий</p>
     </div>
 </div>
