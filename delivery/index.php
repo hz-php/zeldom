@@ -1,20 +1,50 @@
 <?php
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Доставка");
+
+use Bitrix\Highloadblock as HL;
+use Bitrix\Main\Entity;
+
+// Подключаем модуль highloadblock
+if (!\Bitrix\Main\Loader::includeModule('highloadblock')) {
+    die('Модуль Highload-блоков не подключен');
+}
+// ID вашего Highload-блока
+$hlblockId = 4; // Укажите ID вашего Highload-блока
+
+// Получаем информацию о Highload-блоке
+$hlblock = HL\HighloadBlockTable::getById($hlblockId)->fetch();
+
+if (!$hlblock) {
+    die('Highload-блок не найден');
+}
+
+// Получаем сущность для работы с Highload-блоком
+$entity = HL\HighloadBlockTable::compileEntity($hlblock);
+$entityClass = $entity->getDataClass();
+
+// Запрос к таблице Highload-блока
+$rsData = $entityClass::getList([
+    'select' => ['*'], // Выбираем все поля
+    'filter' => [],    // Добавьте фильтры, если необходимо
+    'order' => ['ID' => 'ASC'], // Указываем сортировку
+
+]);
+
 ?>
 
-<!--    <ul class="breadcrumbs" data-aos="fade-right" data-aos-delay="0">-->
-<!--        <li><a href="index.html">Главная</a></li>-->
-<!--        <li><span>Доставка</span></li>-->
-<!--    </ul>-->
+    <!--    <ul class="breadcrumbs" data-aos="fade-right" data-aos-delay="0">-->
+    <!--        <li><a href="index.html">Главная</a></li>-->
+    <!--        <li><span>Доставка</span></li>-->
+    <!--    </ul>-->
 <?php
-$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
+$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", array(
     "START_FROM" => "0",
     "PATH" => "",
     "SITE_ID" => "-",
 ),
     false
-);?>
+); ?>
     <div class="top__wrap-2">
         <h1 class="top__title-2 top__title-2_v1" data-aos="fade-right" data-aos-delay="50"><strong>Доставка товаров</strong> для промышленного земледелия по всему Казахстану</h1>
     </div>
@@ -28,23 +58,29 @@ $APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
                     <label class="form__label">Область</label>
                     <div class="form__box-select form__box-select_region">
                         <select class="form__select js-select-delivery-1" name="region">
-                            <option value="2">Акмолинская область</option>
-                            <option value="3">Актюбинская область</option>
-                            <option value="4">Алматинская область</option>
-                            <option value="5">Атырауская область</option>
-                            <option value="6">Восточно-Казахстанская область</option>
-                            <option value="7">Жамбыльская область</option>
-                            <option value="8">Западно-Казахстанская область</option>
-                            <option value="9">Карагандинская область</option>
-                            <option value="10">Костанайская область</option>
-                            <option value="11">Кызылординская область</option>
-                            <option value="12">Мангистауская область</option>
-                            <option value="13">Павлодарская область</option>
-                            <option value="14">Северо-Казахстанская область</option>
-                            <option value="15">Туркестанская область</option>
-                            <option value="16">Абайская область</option>
-                            <option value="17">Жетысуская область</option>
-                            <option value="18">Улытауская область</option>
+                            <?php
+                            while ($row = $rsData->fetch()) {
+                                ?>
+                                <option value="<?= $row['UF_ID'] ?>"><?= $row['UF_NAME'] ?></option>
+                                <?php
+                            }
+                            ?>
+                            <!--                            <option value="3">Актюбинская область</option>-->
+                            <!--                            <option value="4">Алматинская область</option>-->
+                            <!--                            <option value="5">Атырауская область</option>-->
+                            <!--                            <option value="6">Восточно-Казахстанская область</option>-->
+                            <!--                            <option value="7">Жамбыльская область</option>-->
+                            <!--                            <option value="8">Западно-Казахстанская область</option>-->
+                            <!--                            <option value="9">Карагандинская область</option>-->
+                            <!--                            <option value="10">Костанайская область</option>-->
+                            <!--                            <option value="11">Кызылординская область</option>-->
+                            <!--                            <option value="12">Мангистауская область</option>-->
+                            <!--                            <option value="13">Павлодарская область</option>-->
+                            <!--                            <option value="14">Северо-Казахстанская область</option>-->
+                            <!--                            <option value="15">Туркестанская область</option>-->
+                            <!--                            <option value="16">Абайская область</option>-->
+                            <!--                            <option value="17">Жетысуская область</option>-->
+                            <!--                            <option value="18">Улытауская область</option>-->
                         </select>
                     </div>
                 </div>
@@ -63,7 +99,8 @@ $APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
                 <div class="delivery__items js-delivery-item" data-id="0">
                     <div class="delivery__item">
                         <div class="delivery__col-2-0">
-                            <div class="delivery__logo"><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/logo-1.png" width="150" height="18" alt=""></div><span class="delivery__name">Астана</span>
+                            <div class="delivery__logo"><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/logo-1.png" width="150" height="18" alt=""></div>
+                            <span class="delivery__name">Астана</span>
                         </div>
                         <div class="delivery__col-2-1">
                             <div class="delivery__box"><span class="delivery__label">до 14 кг:</span>
@@ -98,7 +135,8 @@ $APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
                     </div>
                     <div class="delivery__item">
                         <div class="delivery__col-2-0">
-                            <div class="delivery__logo"><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/logo-2.png" width="210" height="69" alt=""></div><span class="delivery__name">Астана</span>
+                            <div class="delivery__logo"><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/logo-2.png" width="210" height="69" alt=""></div>
+                            <span class="delivery__name">Астана</span>
                         </div>
                         <div class="delivery__col-2-1">
                             <div class="delivery__box"><span class="delivery__label">до 5 кг:</span>
@@ -133,7 +171,8 @@ $APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
                     </div>
                     <div class="delivery__item">
                         <div class="delivery__col-2-0">
-                            <div class="delivery__logo"><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/logo-3.png" width="150" height="34" alt=""></div><span class="delivery__name">Астана</span>
+                            <div class="delivery__logo"><img src="<?= SITE_TEMPLATE_PATH ?>/img/delivery/logo-3.png" width="150" height="34" alt=""></div>
+                            <span class="delivery__name">Астана</span>
                         </div>
                         <div class="delivery__col-2-1">
                             <div class="delivery__box"><span class="delivery__label">до 10 кг:</span>
@@ -243,4 +282,4 @@ $APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumbs", Array(
     </div>
     </section>
 
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

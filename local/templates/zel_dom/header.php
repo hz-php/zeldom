@@ -30,7 +30,7 @@ $curPage = $APPLICATION->GetCurPage(true);
         <link href="<?= SITE_TEMPLATE_PATH ?>/css/style.css" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="<?= SITE_TEMPLATE_PATH ?>/img/favicon.png" type="image/png">
         <script>
-            var url_api = 'https://cases.9n.by/test/zemledel/api/';
+            var url_api = '/ajax/';
             //- var url_api = 'http://localhost/zemledel/site/build/api/';
         </script>
         <? $APPLICATION->ShowPanel() ?>
